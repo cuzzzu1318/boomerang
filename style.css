@@ -12,6 +12,7 @@ div#layout-top{
   border: 0.1px solid black;
 }
 #contents{
+  top: 76px;
   width: 360px;
   height: 553px;
   top: 76px;
