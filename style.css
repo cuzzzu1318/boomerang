@@ -1,0 +1,44 @@
+
+.go-back{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 28px;
+  top: 32px;
+}
+.bmr-btn{
+  height: 35px;
+
+  border: 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+}
+.bmr-slc{
+  width: 306px;
+  height: 38px;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+}
+.bmr-text{
+  width: 304px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  padding: 0;
+  border: 1px solid black;
+}
