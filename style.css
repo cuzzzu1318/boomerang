@@ -1,24 +1,41 @@
 
+
+body{
+  width: 360px;
+  height: 640px;
+  border: 0.1px solid red;
+  margin:0;
+}
+div#layout-top{
+  width: 360px;
+  height: 76px;
+  border: 0.1px solid black;
+}
+#contents{
+  width: 360px;
+  height: 553px;
+  top: 76px;
+  border: 0.1px solid yellow;
+}
+
 .go-back{
-  position: absolute;
   width: 30px;
   height: 30px;
-  left: 28px;
-  top: 32px;
 }
 .bmr-btn{
-  height: 35px;
-
-  border: 0;
+  height: 30px;
+  background: #FFFFFF;
+  border: 1px solid #EEB3B3;
   box-sizing: border-box;
-  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;"
   padding: 0;
 
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
-  line-height: 18px;
+  line-height: 7.5px;
 }
 .bmr-slc{
   width: 306px;

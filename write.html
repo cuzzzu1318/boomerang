@@ -9,23 +9,25 @@
 </head>
 
 <body>
-  <div class="layout-top">
+  <div id="layout-top">
     <img class="go-back" class="btn" onclick="history.back()"
       src="element\뒤로가기.png"
       alt="뒤로가기"
-      style="cursor: pointer;"
+      style="cursor: pointer;
+      position: absolute;
+      left: 28px;
+      top: 32px;"
     >
 
   </div>
 
-  <div class="content">
+  <div id="contents">
 
     <form class="" action="index.html" method="get">
       <select class="bmr-slc" name="select"
         style="
         position: absolute;
-        left: 28px;
-        top: 87px;">
+        left: 28px;">
         <option
           style="color: rgba(0, 0, 0, 0.54);">
           =====카테고리를 선택해 주세요.=====
@@ -47,32 +49,53 @@
         height: 38px;
         position: absolute;
         left: 28px;
-        top: 141px;">
-      <textarea class="bmr-text" placeholder="내용을 입력해 주세요."
-        title="content"
+        top: 130px;">
+      <input type="textarea" class="bmr-text" placeholder="내용을 입력해 주세요."
+        name="content"
         style="
         height: 283px;
         position: absolute;
         left: 28px;
-        top: 195px;"></textarea>
-        <input type="submit" class="bmr-btn" value="글 작성"
-          alt="글 작성"
-          style="cursor: pointer;
-          padding: 10px;
+        top: 184px;">
 
-          position: absolute;
-          width: 116px;
-          left: 216px;
-          top: 32px;
-
-          background: #FFFFFF;
-          border: 1px solid #EEB3B3;
-          box-sizing: border-box;
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          border-radius: 4px;"
+        <input type="button" class="bmr-btn" value="위치 설정"
+        name="location"
+        style="
+        position: absolute;
+        width: 116px;
+        left: 28px;
+        top: 483px;
+        "
         >
-    </form>
 
+      <label for="uploadpic" class="bmr-btn"
+        style="
+        text-align: center;
+        padding-top: 10px;
+        position: absolute;
+        width: 116px;
+        left: 28px;
+        top: 587px;"
+      >사진 첨부</label>
+        <input type="file"
+        name="picture"id="uploadpic" accept="image/*"
+        style="
+        display: none;
+        position: absolute;
+        "
+        >
+
+      <input type="submit" class="bmr-btn" value="글 작성"
+        alt="글 작성"
+        style="cursor: pointer;
+        padding: 10px;
+
+        position: absolute;
+        width: 116px;
+        left: 216px;
+        top: 32px;""
+      >
+    </form>
   </div>
 
 </body>
