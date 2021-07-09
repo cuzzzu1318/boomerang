@@ -58,16 +58,22 @@
         position: absolute;
         left: 28px;
         top: 184px;">
-
-        <input type="button" class="bmr-btn" value="위치 설정"
-        name="location"
+      <label for="uploadmap" class="bmr-btn"
         style="
+        text-align: center;
+        padding-top: 10px;
         position: absolute;
         width: 116px;
         left: 28px;
-        top: 483px;
+        top: 483px;"
+      >위치 설정</label>
+      <input type="button" id="uploadmap" class="bmr-btn" value="위치 설정"
+        name="location"
+        style="
+        position: absolute;
+        display: none;
         "
-        >
+      >
 
       <label for="uploadpic" class="bmr-btn"
         style="
@@ -85,16 +91,21 @@
         position: absolute;
         "
         >
-
+      <label for="write" class="bmr-btn"
+        style="
+        text-align: center;
+        padding-top: 10px;
+        position: absolute;
+        width: 116px;
+        left: 216px;
+        top: 32px;"
+      >글 작성</label>
       <input type="submit" class="bmr-btn" value="글 작성"
         alt="글 작성"
         style="cursor: pointer;
         padding: 10px;
-
-        position: absolute;
-        width: 116px;
-        left: 216px;
-        top: 32px;""
+        display: none;
+        "
       >
     </form>
   </div>
