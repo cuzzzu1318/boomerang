@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+.img {
+  position: absolute;
+  width: 150px;
+  height: 93px;
+  left: 90px;
+  top: 26px;
+}
+
+.title{
+  position: absolute;
+  width: 304px;
+  height: 20px;
+  left: 28px;
+  top: 125px;
+}
+
+.login_id input {
+  position: absolute;
+  width: 211px;
+  height: 32px;
+  left: 28px;
+  top: 163px;
+  border: 1px solid rgba(255, 192, 203, 0.863);
+  outline: none;
+  border-radius: 20px;
+  padding-left: 10px;
+}
+
+.login_pw input {
+  position: absolute;
+  width: 211px;
+  height: 32px;
+  left: 28px;
+  top: 203px;
+  border: 1px solid rgba(255, 192, 203, 0.863);
+  outline: none;
+  border-radius: 20px;
+  padding-left: 10px;
+}
+
+.submit input {
+
+  position: absolute;
+  width: 85px;
+  height: 76px;
+  left: 250px;
+  top: 163px;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid rgba(255, 192, 203, 0.863);
+}
+
+.sign_up {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  position: absolute;
+  width: 62px;
+  height: 36px;
+  left: 44px;
+  top: 245px;
+  font-size: 0.7em;
+}
+
+.forgot_id {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  position: absolute;
+  width: 88px;
+  height: 36px;
+  left: 114px;
+  top: 245px;
+  font-size: 0.7em;
+}
+
+.forgot_pw {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  position: absolute;
+  width: 101px;
+  height: 36px;
+  left: 206px;
+  top: 245px;
+  font-size: 0.7em;
+}
+
+.kakao_login input {
+  position: absolute;
+  width: 183px;
+  height: 45px;
+  left: 88px;
+  top: 297px;
+  border: 0px;
+  border-radius: 10px;
+  background: rgb(255, 238, 0);
+  font-size: 1.1em;
+  letter-spacing: 2px;
+}
