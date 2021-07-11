@@ -1,0 +1,54 @@
+body{
+  width: 360px;
+  height: 640px;
+  margin: 0px;
+  background-image: url('지도.png');
+  background-repeat: no-repeat;
+  background-position: 0px 24px;
+}
+
+.blank-div{
+  width: 360px;
+  height: 24px;
+  background: #000000;
+}
+
+.back-div{
+  width: 360px;
+  height: 46px;
+}
+
+.back-img{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 28px;
+  top: 32px;
+  cursor: pointer;
+}
+
+.search-div{
+  width: 360px;
+  height: 34px;
+}
+
+.glass-img{
+  position: absolute;
+  width: 14.88px;
+  height: 15px;
+  left: 36.11px;
+  top: 78px;
+}
+
+.search-input{
+  position:absolute;
+  width: 272px;
+  height: 30px;
+  left: 28px;
+  font-size: 15px;
+  padding-left: 30px;
+  padding-right: 0;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 8px;
+}
