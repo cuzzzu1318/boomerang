@@ -30,6 +30,22 @@
 		};
 
 		var map = new kakao.maps.Map(container, options);
+		
+		var content = '<div class="back-div"style="z-index:1;">
+      <img src="뒤로가기.png" class="back-img" alt="뒤로가기" onclick="history.back()">
+    </div>';
+
+		// 커스텀 오버레이가 표시될 위치입니다 
+		var position = new kakao.maps.LatLng(33.450701, 126.570667);  
+
+		// 커스텀 오버레이를 생성합니다
+		var customOverlay = new kakao.maps.CustomOverlay({
+		    position: position,
+		    content: content   
+		});
+
+		// 커스텀 오버레이를 지도에 표시합니다
+		customOverlay.setMap(map);
 	</script>
   </body>
 </html>
