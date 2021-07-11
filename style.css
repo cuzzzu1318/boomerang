@@ -1,54 +1,98 @@
-body{
-  width: 360px;
-  height: 640px;
-  margin: 0px;
-  background-image: url('지도.png');
-  background-repeat: no-repeat;
-  background-position: 0px 24px;
-}
 
-.blank-div{
-  width: 360px;
-  height: 24px;
-  background: #000000;
+.main.btn{
+width: 151px;
+height: 93px;
+left: 104px;
+top: 26px;
 }
-
-.back-div{
-  width: 360px;
-  height: 46px;
+.menu.btn{
+position: absolute;
+width: 38px;
+height: 38px;
+left: 28px;
+top: 32px;
 }
+.login.btn{
+position: absolute;
+width: 38px;
+height: 38px;
+left: 294px;
+top: 32px;
+}
+.textmap.btn{
+position: absolute;
+width: 124px;
+height: 18px;
+left: 28px;
+top: 181px;
 
-.back-img{
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 18px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -2px;
+
+color: #000000;
+}
+map{
+position: absolute;
+width: 304px;
+height: 256px;
+left: 28px;
+top: 215px;
+
+background: url(.png);
+border-radius: 15px;
+}
+.moremap.btn{
   position: absolute;
-  width: 30px;
-  height: 30px;
-  left: 28px;
-  top: 32px;
-  cursor: pointer;
+  width: 26px;
+  height: 26px;
+  left: 298px;
+  top: 215px;
 }
+.text.list{
+position: absolute;
+width: 140px;
+height: 26px;
+left: 27px;
+top: 503px;
 
-.search-div{
-  width: 360px;
-  height: 34px;
+font-family: Quantico;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 26px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -2px;
+
+color: #000000;
 }
-
-.glass-img{
+list{
   position: absolute;
-  width: 14.88px;
-  height: 15px;
-  left: 36.11px;
-  top: 78px;
-}
-
-.search-input{
-  position:absolute;
-  width: 272px;
-  height: 30px;
+  width: 304px;
+  height: 218px;
   left: 28px;
-  font-size: 15px;
-  padding-left: 30px;
-  padding-right: 0;
-  background: #FFFFFF;
-  border: 1px solid #000000;
-  border-radius: 8px;
+  top: 543px;
+}
+.more.btn{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+
+  position: absolute;
+  width: 77.45px;
+  height: 27px;
+  left: calc(50% - 77.45px/2 + 108.43px);
+  top: calc(50% - 27px/2 + 248.5px);
 }
