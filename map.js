@@ -7,7 +7,7 @@
 
   // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
   var map = new kakao.maps.Map(mapContainer, mapOption);
-  var ps = new kakao.maps.services.Places(map);
+  var ps = new kakao.maps.services.Places();
 
   // 키워드로 장소를 검색합니다
   ps.keywordSearch('이태원 맛집', placesSearchCB);
