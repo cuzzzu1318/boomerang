@@ -27,18 +27,7 @@
 
       // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
       var map = new kakao.maps.Map(mapContainer, mapOption);
-      var customOverlay = new kakao.maps.CustomOverlay({
-        map: map,
-        clickable: true,
-        content: '<div class="back-div">
-            <img src="이미지/뒤로가기.png" class="back-img" alt="뒤로가기" onclick="history.back()">
-            </div>',
-        position: new kakao.maps.viewpoint = new kakao.maps.Viewpoint(),
-        xAnchor: 0.5,
-        yAnchor: 1,
-        zIndex: 3
-      });
-      customOverlay.setMap(map);
+
     </script>
   </body>
 </html>

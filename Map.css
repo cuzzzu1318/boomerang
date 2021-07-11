@@ -35,7 +35,7 @@ body{
 .glass-img{
   position: absolute;
   width: 14.88px;
-  height: 15px;
+  height: 78px;
   left: 36.11px;
   top: 78px;
 }
@@ -43,7 +43,7 @@ body{
 .search-input{
   position:absolute;
   width: 272px;
-  height: 30px;
+  height: 70px;
   left: 28px;
   font-size: 15px;
   padding-left: 30px;
