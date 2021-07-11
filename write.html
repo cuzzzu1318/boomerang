@@ -5,14 +5,14 @@
   <meta charset="utf-8"
   name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,
   maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="writestyle.css">
 </head>
 
 <body>
   <div id="layout-top">
     <img class="go-back" class="btn" onclick="history.back()"
-      src="이미지\뒤로가기.png"
-      alt="뒤로로로가기"
+      src="element\뒤로가기.png"
+      alt="뒤로가기"
       style="cursor: pointer;
       position: absolute;
       left: 28px;
@@ -40,7 +40,7 @@
           휴대폰
         </option>
         <option>
-          에어팟팟
+          에어팟
         </option>
         <option>
           카드
@@ -101,15 +101,16 @@
         position: absolute;
         width: 116px;
         left: 216px;
-        top: 32px;"
+        top: 32px;
+        cursor: pointer";
       >글 작성</label>
-      <input type="submit" class="bmr-btn" value="글 작성"
+        <input type="submit" id="write" value="글 작성"
         alt="글 작성"
-        style="cursor: pointer;
+        style="
         padding: 10px;
-        display: none;
+        display: none;"
         "
-      >
+        >
     </form>
   </div>
 
