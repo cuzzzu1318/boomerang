@@ -2,8 +2,20 @@ body{
   width: 360px;
   height: 640px;
   margin: 0px;
+  background-repeat: no-repeat;
+  background-position: 0px 24px;
 }
 
+.blank-div{
+  width: 360px;
+  height: 24px;
+  background: #000000;
+}
+
+.back-div{
+  width: 360px;
+  height: 46px;
+}
 
 .back-img{
   position: absolute;
@@ -14,6 +26,10 @@ body{
   cursor: pointer;
 }
 
+.search-div{
+  width: 360px;
+  height: 34px;
+}
 
 .glass-img{
   position: absolute;
@@ -31,6 +47,7 @@ body{
   font-size: 15px;
   padding-left: 30px;
   padding-right: 0;
+  background: #FFFFFF;
   border: 1px solid #000000;
   border-radius: 8px;
 }

@@ -6,46 +6,28 @@
     <link rel="stylesheet" href="Map.css">
   </head>
   <body>
-       <div class="blank-div"></div>
-    <div class="back-div"style=" z-index:1;">
-      <img src="이미지/뒤로가기.png" class="back-img" alt="뒤로가기" onclick="history.back()">
+    <div class="blank-div"></div>
+    <div class="back-div">
+      <img src="뒤로가기.png" class="back-img" alt="뒤로가기" onclick="history.back()">
     </div>
-    <div class="search-div"
-	 style="z-index:1;
-			height:34px;">
+    <div class="search-div">
       <form action="" accept-charset="utf-8" name="search-form" method="get">
         <input type="text" name="search-info" class="search-input" placeholder="검색어를 입력하시오." autocomplete="off">
-	      <img src="이미지/돋보기.png" class="glass-img" alt="돋보기"></div>
+        <img src="돋보기.png" class="glass-img" alt="돋보기">
+        <div class="search-history">
       </form>
+    </div>
+    <div id="map" style="width:100%;height:350px;"></div>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=발급받은 APP KEY를 사용하세요"></script>
+    <script>
+      var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+          mapOption = {
+              center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+              level: 3 // 지도의 확대 레벨
+          };
 
-    <div id="map" style="width:360px;height:640px;
-			 left: 0px; top: 0px; z-index: 2;
-			     border: 1px solid black;"></div>
-	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	39abcc7a6b3e5260a026ec0e0a6e5977"></script>
-	<script>
-		var container = document.getElementById('map');
-		var options = {
-			center: new kakao.maps.LatLng(35.24587507268361, 128.6919958789172),
-			level: 3
-		};
-
-		var map = new kakao.maps.Map(container, options);
-		
-		var content = '<div class="back-div"style="z-index:1;">
-      <img src="이미지/뒤로 가기.png" class="back-img" alt="뒤로가기" onclick="history.back()">
-    </div>';
-
-		// 커스텀 오버레이가 표시될 위치입니다 
-		var position = new kakao.maps.LatLng(33.450701, 126.570667);  
-
-		// 커스텀 오버레이를 생성합니다
-		var customOverlay = new kakao.maps.CustomOverlay({
-		    position: position,
-		    content: content   
-		});
-
-		// 커스텀 오버레이를 지도에 표시합니다
-		customOverlay.setMap(map);
-	</script>
+      // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+      var map = new kakao.maps.Map(mapContainer, mapOption);
+    </script>
   </body>
 </html>
