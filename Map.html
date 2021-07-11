@@ -7,9 +7,7 @@
   </head>
   <body>
     <div class="blank-div"></div>
-      <div class="back-div">
-        <img src="이미지/뒤로가기.png" class="back-img" alt="뒤로가기" onclick="history.back()">
-      </div>
+
       <div class="search-div">
         <form action="" accept-charset="utf-8" name="search-form" method="get">
           <input type="text" name="search-info" class="search-input" placeholder="검색어를 입력하시오." autocomplete="off">
@@ -20,6 +18,7 @@
     <div id="map" style="width:360px;height:640px;"></div>
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=39abcc7a6b3e5260a026ec0e0a6e5977"></script>
     <script>
+
       var mapContainer = document.getElementById('map'), // 지도를 표시할 div
           mapOption = {
               center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
@@ -28,6 +27,18 @@
 
       // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
       var map = new kakao.maps.Map(mapContainer, mapOption);
+      var customOverlay = new kakao.maps.CustomOverlay({
+        map: map,
+        clickable: true,
+        content: '<div class="back-div">
+            <img src="이미지/뒤로가기.png" class="back-img" alt="뒤로가기" onclick="history.back()">
+            </div>',
+        position: new kakao.maps.viewpoint = new kakao.maps.Viewpoint(),
+        xAnchor: 0.5,
+        yAnchor: 1,
+        zIndex: 3
+      });
+      customOverlay.setMap(map);
     </script>
   </body>
 </html>
