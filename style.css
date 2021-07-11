@@ -4,7 +4,7 @@ body{
   margin: 0px;
   background-image: url('지도.png');
   background-repeat: no-repeat;
-  background-position: 0px 24px;
+  background-position: 0px 24px;//
 }
 
 .blank-div{
