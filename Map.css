@@ -4,16 +4,6 @@ body{
   margin: 0px;
 }
 
-.blank-div{
-  width: 360px;
-  height: 24px;
-  background: #000000;
-}
-
-.back-div{
-  width: 360px;
-  height: 46px;
-}
 
 .back-img{
   position: absolute;
@@ -24,10 +14,6 @@ body{
   cursor: pointer;
 }
 
-.search-div{
-  width: 360px;
-  height: 34px;
-}
 
 .glass-img{
   position: absolute;
