@@ -1,27 +1,28 @@
 
-.main.btn{
+.mainbtn{
+position: absolute;
 width: 151px;
 height: 93px;
 left: 104px;
 top: 26px;
 }
-.menu.btn{
+.menubtn{
 position: absolute;
 width: 38px;
 height: 38px;
 left: 28px;
 top: 32px;
 }
-.login.btn{
+.loginbtn{
 position: absolute;
 width: 38px;
 height: 38px;
 left: 294px;
 top: 32px;
 }
-.textmap.btn{
+.textmapbtn{
 position: absolute;
-width: 124px;
+width: 140px;
 height: 18px;
 left: 28px;
 top: 181px;
@@ -39,7 +40,7 @@ letter-spacing: -2px;
 
 color: #000000;
 }
-map{
+.map{
 position: absolute;
 width: 304px;
 height: 256px;
@@ -49,25 +50,24 @@ top: 215px;
 background: url(.png);
 border-radius: 15px;
 }
-.moremap.btn{
+.moremapbtn{
   position: absolute;
-  width: 26px;
-  height: 26px;
-  left: 298px;
-  top: 215px;
-}
-.text.list{
-position: absolute;
-width: 140px;
+width: 26px;
 height: 26px;
-left: 27px;
-top: 503px;
+left: 299px;
+top: 221px;
+}
+.textlistbtn{
+position: absolute;
+width: 157px;
+height: 18px;
+left: 28px;
+top: 508px;
 
-font-family: Quantico;
 font-style: normal;
 font-weight: normal;
 font-size: 18px;
-line-height: 26px;
+line-height: 18px;
 /* identical to box height */
 
 display: flex;
@@ -76,23 +76,19 @@ text-align: center;
 letter-spacing: -2px;
 
 color: #000000;
+
 }
-list{
+.list{
   position: absolute;
   width: 304px;
   height: 218px;
   left: 28px;
   top: 543px;
 }
-.more.btn{
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 10px;
-
+.morelistbtn{
   position: absolute;
-  width: 77.45px;
-  height: 27px;
-  left: calc(50% - 77.45px/2 + 108.43px);
-  top: calc(50% - 27px/2 + 248.5px);
+width: 77.45px;
+height: 21px;
+left: 250px;
+top: 555px;
 }
