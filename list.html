@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="list.css">
+</head>
+<body>
+  <img src="이미지\부메랑 로고.png" class="mainbtn" onclick="location.href='main.html'" style="cursor:pointer" >
+  <input type="image" class="backbtn" src = "이미지\뒤로가기.png" img onclick="history.back">
+  <input type="text" class="search" placeholder="검색">
+  <img src="이미지\검색 버튼.png" class="searchimg" alt="검색">
+  <select name="sort" class="sort">
+    <option value="">정렬</option>
+    <option value="찾았다">찾았다</option>
+    <option value="찾는다">찾는다</option>
+  </select>
+<div class="divtable">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">번호</th>
+      <th scope="col">제목</th>
+      <th scope="col">작성자</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+    <tr >
+      <td>1</td>
+      <td>잃어버림</td>
+      <td>안성민</td>
+    </tr>
+    <tr height="1" bgcolor=""#000000;""><td></td></tr>
+  </tbody>
+</table>
+</div>
+<input type="button" class="writebtn" value="글쓰기" onclick="location.href='write.html'">
+</body>
+</html>
