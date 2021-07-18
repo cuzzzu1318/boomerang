@@ -13,23 +13,36 @@
     <div class="img">
         <img src="이미지\부메랑 로고.png" alt="아이콘" title="아이콘">
     </div>
-    <div class="title">
-        <h3>로그인</h3>
+    <div class="title">로그인
+      <hr>
     </div>
     <div class="wrap">
         <div class="login">
             <div class="input">
                 <div class="login_id">
-                    <input type="email" name="" id="" placeholder="아이디를 입력하세요">
+                    <input type="email" name="" id="id" placeholder="아이디를 입력하세요">
                 </div>
                 <div class="login_pw">
-                    <input type="password" name="" id="" placeholder="비밀번호를 입력하세요">
+                    <input type="password" name="" id="pw" placeholder="비밀번호를 입력하세요">
                 </div>
             </div>
             <div class="submit">
-                <input type="button" value="로그인">
+                <input type="button" id="submit" value="로그인">
             </div>
         </div>
+        <script>
+            document.getElementById('submit').onclick = function() {
+              var ID = document.getElementById('id').value;
+              var pass = document.getElementById('pw').value;
+              if (ID === "1111" && pass === "1111") {
+                location.href="main.html";
+
+              }
+              else {
+                alert("아이디 패스워드가 올바르지 않습니다.");
+              }
+            }
+        </script>
         <div class="login_etc">
             <div class="sign_up">
                 <a href="">회원가입</a>
