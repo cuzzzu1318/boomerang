@@ -1,22 +1,23 @@
 .img {
   position: absolute;
-  width: 150px;
+  width: 151px;
   height: 93px;
-  left: 90px;
+  left: 104px;
   top: 26px;
 }
 
-.title{
+.title {
   position: absolute;
   width: 304px;
   height: 20px;
   left: 28px;
   top: 125px;
+  font-size: 14px;
 }
 
 .login_id input {
   position: absolute;
-  width: 211px;
+  width: 200px;
   height: 32px;
   left: 28px;
   top: 163px;
@@ -28,7 +29,7 @@
 
 .login_pw input {
   position: absolute;
-  width: 211px;
+  width: 200px;
   height: 32px;
   left: 28px;
   top: 203px;
@@ -39,7 +40,6 @@
 }
 
 .submit input {
-
   position: absolute;
   width: 85px;
   height: 76px;
