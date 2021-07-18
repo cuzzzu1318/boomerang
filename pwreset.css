@@ -1,0 +1,96 @@
+body{
+  position: relative;
+  width: 360px;
+  height: 640px;
+  MARGIN: 0;
+}
+.back{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 28px;
+  top: 32px;
+}
+.logo{
+  position:absolute;
+  width: 151px;
+  height: 93px;
+  left: 104px;
+  top: 26px;
+}
+.pw_title{
+  position:absolute;
+  width: 304px;
+  height: 20px;
+  left: 28px;
+  top: 125px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  border-bottom: 1px solid #0000005E;
+  color: #000000;
+}
+.big_box{
+  position: absolute;
+  top: 161px;
+  left: 28px;
+  display:flex;
+  flex-direction: column;
+  width: 304px;
+  height: 177px;
+}
+.box{
+  width: 304px;
+  height: 285px;
+}
+.mini_box{
+  width: 304px;
+  height: 31px;
+}
+.input_inf1{
+  box-sizing: border-box;
+  height: 38px;
+  width: 304px;
+  border-radius: 4px;
+  padding-left: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.54);
+}
+.input_inf2{
+  box-sizing: border-box;
+  height: 38px;
+  width: 304px;
+  border-radius: 4px;
+  padding-left: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.54);
+  margin-top: 16px;
+}
+#big_btn{
+  width:304px;
+  height: 38px;
+  margin-top: 16px;
+  background: #FFFFFF;
+  border: 1px solid #EEB3B3;
+  box-sizing: border-box;
+  box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+.boolean{
+  padding-left: 10px;
+  margin-top: 9px;
+  border-style: none;
+  color: blue;
+  width: 304px;
+  height: 22px;
+}
