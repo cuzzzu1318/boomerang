@@ -7,6 +7,39 @@
     <link rel="stylesheet" href="findID.css">
   </head>
   <body>
+    <div id="layout-top">
+      <img class="go-back" class="btn" onclick="history.back()"
+        src="C:\Users\정호\Desktop\project\이미지\뒤로가기.png"
+        alt="뒤로가기"
+        style="cursor: pointer;
+        position: absolute;
+        left: 28px;
+        top: 32px;"
+      >
+      <a href="main.html">
+        <img class="logo" src="C:\Users\정호\Desktop\project\이미지\부메랑 로고.png"
+          alt="로고">
+      </a>
+    </div>
+    <div id="layout-contents">
+      <div id="headline">
+        아이디 찾기
+      </div>
+      <form class="" action="index.html" method="post">
+        <input type="text" class="bmr-text" id="phonenum" placeholder="전화번호를 입력해주세요."
+          name="phonenum"
+        >
+        <input type="button" class="bmr-btn" id="certification" value="인증번호 전송"
+          name="num"
+        >
+        <input type="text" class="bmr-text" id="numinput" placeholder="인증번호를 입력해주세요."
+          name="numinput"
+        >
+        <input type="button" class="bmr-btn" id="findID" value="아이디 찾기"
+          name="findID"
+        >
+      </form>
+    </div>
 
   </body>
 </html>
