@@ -23,98 +23,60 @@
   font-size: 14px;
 }
 
-.nickname {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 10px;
+#reset {
   position: absolute;
-  width: 221px;
-  height: 38px;
+  width: 70px;
+  height: 20px;
+  left: 261px;
+  top: 122px;
+  font-size: 14px;
+  box-shadow: 0px 0px 0px;
+}
+
+#id {
+  position: absolute;
+  width: 292px;
+  height: 36px;
   left: 28px;
-  top: 150px;
+  top: 160px;
 }
 
-.email {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 10px;
+#nickname {
   position: absolute;
-  width: 114px;
-  height: 38px;
+  width: 292px;
+  height: 36px;
   left: 28px;
-  top: 190px;
+  top: 210px;
 }
 
-#reset_pw {
-  display: flex;
-  flex-direction: row;
-  padding: 5px;
+#residence {
   position: absolute;
-  height: 28px;
-  left: 210px;
-  top: 198px;
-  border: 1px solid rgba(255, 192, 203, 0.863);
-  background-color: white;
-}
-
-.residence {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 10px;
-  position: absolute;
-  width: 114px;
-  height: 38px;
+  width: 292px;
+  height: 36px;
   left: 28px;
-  top: 230px;
+  top: 260px;
 }
 
-#reset_res {
-  display: flex;
-  flex-direction: row;
-  padding: 5px;
+#found {
   position: absolute;
-  height: 28px;
-  left: 223px;
-  top: 238px;
-  border: 1px solid rgba(255, 192, 203, 0.863);
-  background-color: white;
-}
-
-.found {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 10px;
-  position: absolute;
-  width: 114px;
-  height: 38px;
-  left: 28px;
-  top: 270px;
-}
-
-.find {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 10px;
-  position: absolute;
-  width: 114px;
-  height: 38px;
+  width: 292px;
+  height: 36px;
   left: 28px;
   top: 310px;
 }
 
+#find {
+  position: absolute;
+  width: 292px;
+  height: 36px;
+  left: 28px;
+  top: 360px;
+}
+
 #all {
-  display: flex;
   position: absolute;
   width: 192px;
   height: 38px;
-  left: 100px;
-  top: 370px;
-  padding-left: 28px;
-  background-color: white;
-  border: 1px solid rgba(255, 192, 203, 0.863);
+  left: 80px;
+  top: 430px;
 }
