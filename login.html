@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>부메랑</title>
     <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="./style.css">
     <style>
         img {display: block; margin: 0px auto;}
     </style>
 </head>
 <body>
   <a href="main.html">
-      <img src="이미지\뒤로가기.png" class="back-btn" alt="뒤로가기" onclick="history.back()">
-      <img class="logo" src="이미지\부메랑 로고.png" alt="로고">
-    </a>
+    <img class="bmr-back" src="이미지\뒤로가기.png" alt="뒤로가기" onclick="history.back()">
+    <img class="bmr-logo" src="이미지\부메랑 로고.png" alt="로고">
+  </a>
     <div class="title">로그인
       <hr>
     </div>
@@ -21,10 +22,10 @@
         <form class="login" action="" method="post">
             <div class="input">
                 <div class="login_id">
-                    <input type="email" name="" id="id" placeholder="아이디를 입력하세요">
+                    <input type="email" class="bmr-text" name="" id="id" placeholder="아이디를 입력하세요">
                 </div>
                 <div class="login_pw">
-                    <input type="password" name="" id="pw" placeholder="비밀번호를 입력하세요">
+                    <input type="password" class="bmr-text" name="" id="pw" placeholder="비밀번호를 입력하세요">
                 </div>
             </div>
             <div class="submit">

@@ -1,4 +1,4 @@
-.back-btn{
+.bmr-back{
   position: absolute;
   width: 30px;
   height: 30px;
@@ -7,7 +7,7 @@
   cursor: pointer;
 }
 
-.logo {
+.bmr-logo {
   position: absolute;
   left: 104px;
   top: 26px;
