@@ -3,10 +3,11 @@
 <head>
 <meta charset="utf-8">
 <link rel="stylesheet" href="list.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <img src="이미지\부메랑 로고.png" class="mainbtn" onclick="location.href='main.html'" style="cursor:pointer" >
-  <input type="image" class="backbtn" src = "이미지\뒤로가기.png" img onclick="history.back()">
+  <img src="이미지\부메랑 로고.png" class="bmr-logo" onclick="location.href='main.html'">
+  <input type="image" class="bmr-back" src = "이미지\뒤로가기.png" img onclick="history.back()">
   <input type="text" class="search" placeholder="검색">
   <img src="이미지\검색 버튼.png" class="searchimg" alt="검색">
   <select name="sort" class="sort">
@@ -33,6 +34,6 @@
   </tbody>
 </table>
 </div>
-<input type="button" class="writebtn" value="글쓰기" onclick="location.href='write.html'">
+<input type="button" class="bmr-btn" id="writebtn"   value="글쓰기" onclick="location.href='write.html'" style="cursor:pointer ">
 </body>
 </html>
