@@ -29,6 +29,7 @@ div#layout-top{
   position: absolute;
   left: 28px;
   top: 184px;
+  padding-top:10px;
 }
 
 #uploadmap{
