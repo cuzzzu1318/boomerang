@@ -5,31 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>부메랑</title>
     <link rel="stylesheet" href="./mypage.css">
+    <link rel="stylesheet" href="./style.css">
     <style>
         img {display: block; margin: 0px auto;}
     </style>
 </head>
 <body>
+    <img class="bmr-back" src="이미지\뒤로가기.png" alt="뒤로가기" onclick="history.back()">
     <a href="main.html">
-      <img src="이미지\뒤로가기.png" class="back-btn" alt="뒤로가기" onclick="history.back()">
-      <img class="logo" src="이미지\부메랑 로고.png" alt="로고">
+      <img class="bmr-logo" src="이미지\부메랑 로고.png" alt="로고">
     </a>
     <div class="title">마이페이지
       <hr>
     </div>
     <div class="nickname">닉네임 </div>
     <div class="email">이메일 </div>
-    <div class="reset_pw">
-      <input type="button" id="reset_pw" value="비밀번호 재설정">
-    </div>
+    <input type="button" class="bmr-btn" id="reset_pw" value="비밀번호 재설정">
     <div class="residence">거주지 </div>
-    <div class="reset_res">
-      <input type="button" id="reset_res" value="거주지 재설정">
-    </div>
+    <input type="button" class="bmr-btn" id="reset_res" value="거주지 재설정">
     <div class="found">찾은 물건 </div>
     <div class="find">찾아준 물건 </div>
-    <div class="all">
-      <input type="button" id="all" value="내 게시글 모아보기">
-    </div>
+    <input type="button" class="bmr-btn" id="all" value="내 게시글 모아보기">
 </body>
 </html>
