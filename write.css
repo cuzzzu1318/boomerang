@@ -1,0 +1,63 @@
+div#layout-top{
+  width: 360px;
+  height: 76px;
+}
+#contents{
+  top: 76px;
+  width: 360px;
+  height: 553px;
+}
+
+#category{
+  height: 38px;
+  position: absolute;
+  left: 28px;
+  top: 76px;
+}
+
+#title{
+  width: 294px;
+  height: 38px;
+  position: absolute;
+  left: 28px;
+  top: 130px;
+}
+
+#textbox{
+  width: 294px;
+  height: 283px;
+  position: absolute;
+  left: 28px;
+  top: 184px;
+}
+
+#uploadmap{
+  text-align: center;
+  padding-top: 10px;
+  position: absolute;
+  width: 116px;
+  height: 28px;
+  left: 28px;
+  top: 483px;
+}
+
+#uploadpic{
+  text-align: center;
+  padding-top: 10px;
+  position: absolute;
+  width: 116px;
+  height: 28px;
+  left: 28px;
+  top: 587px;
+}
+
+#write{
+  text-align: center;
+  padding-top: 10px;
+  position: absolute;
+  height: 28px;
+  width: 116px;
+  left: 216px;
+  top: 32px;
+  cursor: pointer
+}
