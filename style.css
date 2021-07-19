@@ -30,6 +30,7 @@ body{
 }
 
 .bmr-btn{
+  cursor: pointer;
   background: #FFFFFF;
   border: 1px solid #EEB3B3;
   box-sizing: border-box;
