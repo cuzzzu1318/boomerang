@@ -1,21 +1,30 @@
+.bmr-back{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 28px;
+  top: 32px;
+  cursor: pointer;
+}
+
 .local {
   position: absolute;
-  width: 120px;
-  height: 20px;
-  left: 28px;
-  top: 54px;
+  width: 67px;
+  height: 19px;
+  left: 30px;
+  top: 74px;
   font-size: 12px;
 }
 
-.title {
+#title {
   position: absolute;
-  width: 120px;
-  height: 20px;
-  left: 28px;
-  top: 70px;
+  width: 150px;
+  height: 19px;
+  left: 30px;
+  top: 90px;
 }
 
-.open_map input {
+#open_map {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
