@@ -8,32 +8,32 @@ div#layout-contents{
 }
 
 #showID{
-  width: 294px;
-  height: 38px;
+  width: 292px;
+  height: 36px;
   position: absolute;
   left: 28px;
   top: 161px;
 }
 
 #shownickname{
-  width: 294px;
-  height: 38px;
+  width: 292px;
+  height: 36px;
   position: absolute;
   left: 28px;
   top: 215px;
 }
 
 #inputPW{
-  width: 294px;
-  height: 38px;
+  width: 292px;
+  height: 36px;
   position: absolute;
   left: 28px;
   top: 268px;
 }
 
 #reinputPW{
-  width: 294px;
-  height: 38px;
+  width: 292px;
+  height: 36px;
   position: absolute;
   left: 28px;
   top: 322px;
