@@ -23,39 +23,40 @@
   font-size: 14px;
 }
 
-.login_id input {
+#id {
   position: absolute;
-  width: 200px;
+  width: 211px;
   height: 32px;
   left: 28px;
   top: 163px;
   border: 1px solid rgba(255, 192, 203, 0.863);
   outline: none;
-  border-radius: 20px;
+  border-radius: 10px;
   padding-left: 10px;
 }
 
-.login_pw input {
+#pw {
   position: absolute;
-  width: 200px;
+  width: 211px;
   height: 32px;
   left: 28px;
   top: 203px;
   border: 1px solid rgba(255, 192, 203, 0.863);
   outline: none;
-  border-radius: 20px;
+  border-radius: 10px;
   padding-left: 10px;
 }
 
-.bmr-btn input{
+#submit{
   position: absolute;
-  width: 85px;
+  width: 75px;
   height: 76px;
-  left: 250px;
+  left: 257px;
   top: 163px;
   border-radius: 10px;
   background-color: white;
   border: 1px solid rgba(255, 192, 203, 0.863);
+  cursor: pointer;
 }
 
 .sign_up {
