@@ -1,17 +1,3 @@
-.mainbtn{
-position: absolute;
-width: 151px;
-height: 93px;
-left: 104px;
-top: 26px;
-}
-.backbtn{
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  left: 28px;
-  top: 32px;
-}
 .title{
   position: absolute;
   width: 304px;
