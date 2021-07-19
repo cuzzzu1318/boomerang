@@ -6,10 +6,11 @@
     name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,
     maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="changeinformation.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div id="layout-top">
-      <img class="go-back" class="btn" onclick="history.back()"
+      <img class="go-back" class="bmr-back" onclick="history.back()"
         src="이미지\뒤로가기.png"
         alt="뒤로가기"
         style="cursor: pointer;
@@ -18,7 +19,7 @@
         top: 32px;"
       >
       <a href="main.html">
-        <img class="logo" src="이미지\부메랑 로고.png"
+        <img class="bmr-logo" src="이미지\부메랑 로고.png"
           alt="로고">
       </a>
     </div>
@@ -41,6 +42,8 @@
         >
         <select class="bmr-slc" name="select"
           style="
+          height: 38px;
+          width: 304px;
           position: absolute;
           left: 28px;
           top: 376px;">
@@ -68,7 +71,7 @@
           </option>
         </select>
         <input type="submit" class="bmr-btn" id="change" value="정보 수정"
-          name="정보수"
+          name="정보수정"
         >
       </form>
     </div>
