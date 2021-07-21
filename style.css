@@ -1,22 +1,5 @@
 body{
-  width: 360px;
-  height: 640px;
   margin:0;
-}
-
-.bmr-headline{
-  position: absolute;
-  top: 125px;
-  width: 304px;
-  height: 20px;
-  left: 28px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.37);
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
 }
 
 .bmr-slc{
@@ -57,11 +40,16 @@ body{
   padding-left: 10px;
 }
 
+.div-logo{
+  position: relative;
+  padding-top: 26px;
+  overflow:hidden;
+}
 .bmr-logo{
   cursor: pointer;
-  position: absolute;
-  left: 104px;
-  top: 26px;
+  position: relative;
+  margin:0 auto;
+  display: block;
 }
 
 .bmr-back{
