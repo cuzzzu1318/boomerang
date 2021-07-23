@@ -9,7 +9,7 @@
 
 .post {
   padding: 10px;
-  width: 80%;
+  width: 81%;
   font-size: 14px;
   display: flex;
   justify-content: space-between;
@@ -17,7 +17,7 @@
 
 .input {
   flex: 5;
-  width: 80%;
+  width: 81%;
 }
 
 .local {
@@ -40,7 +40,7 @@
 }
 
 #content {
-  width: 80%;
+  width: 81%;
   height: 170px;
   border-radius: 5px;
   border: 1px solid #000000;
@@ -49,7 +49,7 @@
 
 .lost {
   margin-top: 30px;
-  width: 80%;
-  height: 80%;
+  width: 81%;
+  height: 81%;
   border-radius: 4px;
 }

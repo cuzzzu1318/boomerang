@@ -7,7 +7,7 @@
 }
 
 #reset {
-  width: 10%;
+  width: 8%;
   float: right;
   font-size: 11px;
   background-color: white;
@@ -17,12 +17,12 @@
 
 #id, #nickname, #residence, #found, #find{
   margin-top: 10px;
-  width: 80%;
+  width: 81%;
   height: 40px;
 }
 
 #all{
   margin-top: 20px;
-  width: 80%;
+  width: calc(81% + 12px);
   height: 40px;
 }
