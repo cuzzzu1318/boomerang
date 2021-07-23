@@ -1,0 +1,54 @@
+#id{
+  position: absolute;
+  width: 292px;
+  height: 36px;
+  left: 28px;
+  top: 161px;
+}
+
+#nickname{
+  position: absolute;
+  width: 292px;
+  height: 36px;
+  left: 28px;
+  top: 215px;
+}
+
+#area{
+  position: absolute;
+  width: 304px;
+  height: 38px;
+  left: 28px;
+  top: 269px;
+  padding-left: 10px;
+}
+
+#signup{
+  position: absolute;
+  width: 304px;
+  height: 38px;
+  left: 28px;
+  top: 323px;
+}
+
+#check-id{
+  position: absolute;
+  padding: 10px;
+  width: 60px;
+  height: 30px;
+  left: 266px;
+  top: 165px;
+  font-size: 10px;
+  line-height: 11.72px;
+}
+
+#check-nickname{
+  position: absolute;
+  padding: 10px;
+  width: 60px;
+  height: 30px;
+  left: 266px;
+  top: 219px;
+  font-size: 10px;
+  line-height: 11.72px;
+}

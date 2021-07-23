@@ -1,0 +1,82 @@
+.bmr-back{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 28px;
+  top: 32px;
+  cursor: pointer;
+}
+
+.bmr-logo {
+  position: absolute;
+  left: 104px;
+  top: 26px;
+  cursor: pointer;
+}
+
+.title {
+  position: absolute;
+  width: 304px;
+  height: 20px;
+  left: 28px;
+  top: 125px;
+  font-size: 14px;
+}
+
+#reset {
+  position: absolute;
+  width: 70px;
+  height: 20px;
+  left: 261px;
+  top: 122px;
+  font-size: 14px;
+  box-shadow: 0px 0px 0px;
+}
+
+#id {
+  position: absolute;
+  width: 292px;
+  height: 36px;
+  left: 28px;
+  top: 160px;
+}
+
+#nickname {
+  position: absolute;
+  width: 292px;
+  height: 36px;
+  left: 28px;
+  top: 210px;
+}
+
+#residence {
+  position: absolute;
+  width: 292px;
+  height: 36px;
+  left: 28px;
+  top: 260px;
+}
+
+#found {
+  position: absolute;
+  width: 292px;
+  height: 36px;
+  left: 28px;
+  top: 310px;
+}
+
+#find {
+  position: absolute;
+  width: 292px;
+  height: 36px;
+  left: 28px;
+  top: 360px;
+}
+
+#all {
+  position: absolute;
+  width: 192px;
+  height: 38px;
+  left: 80px;
+  top: 430px;
+}

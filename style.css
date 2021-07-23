@@ -1,0 +1,75 @@
+body{
+  margin:0;
+}
+
+.bmr-headline{
+  position: absolute;
+  top: 125px;
+  width: 304px;
+  height: 20px;
+  left: 28px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.37);
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.bmr-slc{
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.bmr-btn{
+  cursor: pointer;
+  background: #FFFFFF;
+  border: 1px solid #EEB3B3;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  padding: 0;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 7.5px;
+}
+
+.bmr-text{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  padding: 0;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  border-radius: 4px;
+  padding-left: 10px;
+}
+
+.div-logo{
+  position: relative;
+  padding-top: 26px;
+  overflow:hidden;
+}
+.bmr-logo{
+  cursor: pointer;
+  position: relative;
+  margin:0 auto;
+  display: block;
+}
+
+.bmr-back{
+  cursor: pointer;
+  position: absolute;
+  left: 28px;
+  top: 32px;
+}

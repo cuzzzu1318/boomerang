@@ -1,0 +1,49 @@
+.search{
+  position: absolute;
+  width: 274px;
+  height: 30px;
+  left: 28px;
+  top: 126px;
+  padding-inline-start: 30px;
+  padding-right:0px;
+  filter: drop-shadow(1px 5px 5px rgba(0, 0, 0, 0.25));
+  border: none;
+  border-radius:10px;
+}
+.searchimg{
+  position: absolute;
+  width: 14.88px;
+  height: 15px;
+  left: 36.11px;
+  top: 135px;
+}
+#writebtn{
+  position: absolute;
+  width: 102px;
+  height: 34px;
+  left: 236px;
+  top: 586px;
+}
+#sort{
+  position: absolute;
+  width: 55px;
+  height: 20px;
+  left: 28px;
+  top: 175px;
+  border-radius: 4px;
+  font-size: 10px;
+  background-color: white;
+}
+.divtable{
+  position: absolute;
+  width: 304px;
+  height: 348px;
+  left: 28px;
+  top: 210px;
+}
+.table{
+  width: 304px;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: -0.5px;
+}

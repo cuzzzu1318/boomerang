@@ -1,0 +1,48 @@
+
+div#layout-top{
+  height: 125px;
+}
+
+div#layout-contents{
+  height: 495px;
+}
+
+#showID{
+  width: 292px;
+  height: 36px;
+  position: absolute;
+  left: 28px;
+  top: 161px;
+}
+
+#shownickname{
+  width: 292px;
+  height: 36px;
+  position: absolute;
+  left: 28px;
+  top: 215px;
+}
+
+#inputPW{
+  width: 292px;
+  height: 36px;
+  position: absolute;
+  left: 28px;
+  top: 268px;
+}
+
+#reinputPW{
+  width: 292px;
+  height: 36px;
+  position: absolute;
+  left: 28px;
+  top: 322px;
+}
+
+#change{
+  width: 304px;
+  height: 38px;
+  position: absolute;
+  left: 28px;
+  top: 430px;
+}

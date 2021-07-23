@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>부메랑 - 돌아와 내물건_아이디찾기</title>
+    <meta charset="utf-8"
+    name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,
+    maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="changeinformation.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="layout-top">
+      <img class="go-back" class="bmr-back" onclick="history.back()"
+        src="이미지\뒤로가기.png"
+        alt="뒤로가기"
+        style="cursor: pointer;
+        position: absolute;
+        left: 28px;
+        top: 32px;"
+      >
+      <a href="main.html">
+        <img class="bmr-logo" src="이미지\부메랑 로고.png"
+          alt="로고">
+      </a>
+    </div>
+    <div id="layout-contents">
+      <div class="bmr-headline">
+        정보 수정
+      </div>
+      <form class="" action="index.html" method="get">
+        <input type="text" class="bmr-text" id="showID" disabled value="아이디"
+          name="ID"
+        >
+        <input type="text" class="bmr-text" id="shownickname" disabled value="닉네임"
+          name="nickname"
+        >
+        <input type="text" class="bmr-text" id="inputPW" placeholder="비밀번호"
+          name="password"
+        >
+        <input type="text" class="bmr-text" id="reinputPW" placeholder="비밀번호 확인"
+          name="re password"
+        >
+        <select class="bmr-slc" name="select"
+          style="
+          height: 38px;
+          width: 304px;
+          position: absolute;
+          left: 28px;
+          top: 376px;">
+          <option
+            style="color: rgba(0, 0, 0, 0.54);">
+            =====거주지역을 선택해 주세요.=====
+          </option>
+          <option>
+            서울 / 경기
+          </option>
+          <option>
+            강원
+          </option>
+          <option>
+            전라
+          </option>
+          <option>
+            충청
+          </option>
+          <option selected>
+            경상
+          </option>
+          <option>
+            제주
+          </option>
+        </select>
+        <input type="submit" class="bmr-btn" id="change" value="정보 수정"
+          name="정보수정"
+        >
+      </form>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,85 @@
+.menubtn{
+position: absolute;
+width: 38px;
+height: 38px;
+left: 28px;
+top: 32px;
+}
+.loginbtn{
+position: absolute;
+width: 38px;
+height: 38px;
+right: 28px;
+top: 32px;
+}
+.textmapbtn{
+position: absolute;
+width: 140px;
+height: 18px;
+left: 28px;
+top: 135px;
+
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 18px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -2px;
+
+color: #000000;
+}
+.map{
+position: absolute;
+width: 304px;
+height: 256px;
+left: 28px;
+top: 169px;
+
+border-radius: 15px;
+}
+.moremapbtn{
+  position: absolute;
+width: 26px;
+height: 26px;
+left: 299px;
+top: 175px;
+}
+.textlistbtn{
+position: absolute;
+width: 157px;
+height: 18px;
+left: 28px;
+top: 462px;
+
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 18px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -2px;
+
+color: #000000;
+
+}
+.list{
+  position: absolute;
+  width: 304px;
+  height: 218px;
+  left: 28px;
+  top: 497px;
+}
+.morelistbtn{
+  position: absolute;
+width: 77.45px;
+height: 21px;
+left: 250px;
+top: 509px;
+}

@@ -1,0 +1,39 @@
+div#layout-top{
+  height: 125px;
+}
+
+div#layout-contents{
+  height: 495px;
+}
+
+#phonenum{
+  width: 292px;
+  height: 36px;
+  position: absolute;
+  left: 28px;
+  top: 161px;
+}
+
+#certification{
+  height: 38px;
+  width: 170px;
+  position: absolute;
+  left: 162px;
+  top: 215px;
+}
+
+#numinput{
+  width: 292px;
+  height: 36px;
+  position: absolute;
+  left: 28px;
+  top: 269px;
+}
+
+#findID{
+  width: 304px;
+  height: 38px;
+  position: absolute;
+  left: 28px;
+  top: 323px;
+}
