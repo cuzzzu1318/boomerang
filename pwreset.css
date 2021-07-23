@@ -4,14 +4,14 @@ body{
   height: 640px;
   margin: auto;
 }
-.back{
+.bmr-back{
   position: absolute;
   width: 30px;
   height: 30px;
   left: 28px;
   top: 32px;
 }
-.logo{
+.bmr-logo{
   position:absolute;
   width: 151px;
   height: 93px;
