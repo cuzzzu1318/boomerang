@@ -2,16 +2,16 @@ body{
   position: relative;
   width: 360px;
   height: 640px;
-  MARGIN: 0;
+  margin: auto;
 }
-.back{
+.bmr-back{
   position: absolute;
   width: 30px;
   height: 30px;
   left: 28px;
   top: 32px;
 }
-.logo{
+.bmr-logo{
   position:absolute;
   width: 151px;
   height: 93px;
@@ -45,20 +45,7 @@ body{
   width: 304px;
   height: 285px;
 }
-.input_inf1{
-  box-sizing: border-box;
-  height: 38px;
-  width: 304px;
-  border-radius: 4px;
-  padding-left: 10px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 18px;
-  color: rgba(0, 0, 0, 0.54);
-}
-.input_inf2,.input_inf3{
+.bmr-text{
   box-sizing: border-box;
   height: 38px;
   width: 304px;
@@ -72,7 +59,10 @@ body{
   color: rgba(0, 0, 0, 0.54);
   margin-top: 16px;
 }
-#btn{
+#first{
+  margin-top: 0px;
+}
+.bmr-btn{
   width:170px;
   height: 38px;
   position: relative;
@@ -87,12 +77,13 @@ body{
 #big_btn{
   width:304px;
   height: 38px;
-  margin-top: 16px;
+  left: 0px;
+  /*margin-top: 16px;
   background: #FFFFFF;
   border: 1px solid #EEB3B3;
   box-sizing: border-box;
   box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 4px;
+  border-radius: 4px;*/
 }
 .timer{
   padding-left: 10px;

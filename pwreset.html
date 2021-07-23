@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8"
+    name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,
+    maximum-scale=1.0, minimum-scale=1.0">
     <title>비밀번호 찾기 및 재설정</title>
     <link rel="stylesheet" href="pwreset.css">
   </head>
 
   <body>
-    <div class="back">
-      <img src="이미지/뒤로가기.png" alt="back">
+    <div class="bmr-back">
+      <a href="main.html"><img src="이미지/뒤로가기.png" alt="back"><a>
     </div>
-    <div class="logo">
-      <img src="이미지/부메랑 로고.png" alt="부메랑">
+    <div class="bmr-logo">
+      <a href="main.html"><img src="이미지/부메랑 로고.png" alt="부메랑"></a>
     </div>
 
     <div class="pw_title">
       비밀번호 재설정
     </div>
     <div class="big_box">
-      <div><input type="email" class="input_inf1" placeholder="새 비밀번호를 입력해 주세요"></div>
-      <div><input type="tel" class="input_inf2" placeholder="새 비밀번호 확인"></div>
+      <div><input type="email" class="bmr-text" id="first" placeholder="새 비밀번호를 입력해 주세요"></div>
+      <div><input type="tel" class="bmr-text" placeholder="새 비밀번호 확인"></div>
       <div><input type="text" class="boolean" value="비밀번호가 일치합니다."></div>
-      <div><input type="button" id="big_btn" value="비밀번호 재설정"></div>
+      <div><input type="button" class="bmr-btn" value="비밀번호 재설정"></div>
     </div>
 
 
