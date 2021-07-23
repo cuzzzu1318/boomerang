@@ -12,13 +12,13 @@
 <body>
   <div id="layout-top">
     <img class="bmr-back" class="btn" onclick="history.back()"
-      src="이미지\뒤로가기.png"
+      src="이미지\뒤로가기.svg"
       alt="뒤로가기"
-      style="cursor: pointer;
-      position: absolute;
-      left: 28px;
-      top: 32px;"
+      style="cursor: pointer;"
     >
+    <label for="write" class="bmr-btn" id="write"
+      ;
+    >글 작성</label>
 
   </div>
 
@@ -49,19 +49,24 @@
         name="title"
         >
        <textarea name="content" class="bmr-text" id="textbox" cols="30" rows="10" placeholder="내용을 입력해 주세요."></textarea>
-      <label for="uploadmapbtn" class="bmr-btn" id="uploadmap"
+       <div class="upload">
+         <label for="uploadmapbtn" class="bmr-btn" id="uploadmap"
 
-      >위치 설정</label>
-      <input type="button"  class="bmr-btn" value="위치 설정"
-        name="location" id="uploadmapbtn"
-        style="
-        position: absolute;
-        display: none;
-        "
-      >
+         >위치 설정</label>
+       </div>
+       <div class="upload">
+         <label for="uploadpicbtn" class="bmr-btn" id="uploadpic"
+         >사진 첨부</label>
+       </div>
 
-      <label for="uploadpicbtn" class="bmr-btn" id="uploadpic"
-      >사진 첨부</label>
+        <input type="button"  class="bmr-btn" value="위치 설정"
+          name="location" id="uploadmap"
+          style="
+          position: absolute;
+          display: none;
+          "
+        >
+
         <input type="file" id="uploadpicbtn"
         name="picture" accept="image/*"
         style="
@@ -69,13 +74,10 @@
         position: absolute;
         "
         >
-      <label for="write" class="bmr-btn" id="write"
-        ;
-      >글 작성</label>
+
         <input type="submit" value="글 작성"
         alt="글 작성"
         style="
-        padding: 10px;
         display: none;"
         >
     </form>
