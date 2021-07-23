@@ -61,7 +61,7 @@ div#layout-top{
   position: absolute;
   height: 28px;
   width: 116px;
-  left: 216px;
+  right: 28px;
   top: 32px;
   cursor: pointer
 }
