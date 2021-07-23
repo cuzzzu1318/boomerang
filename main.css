@@ -13,17 +13,16 @@ right: 28px;
 top: 32px;
 }
 .textmapbtn{
-position: absolute;
-width: 140px;
+position: relative;
+width: 81%;
 height: 18px;
-left: 28px;
-top: 135px;
-
+margin:0 auto;
+margin-bottom: 17px;
+margin-top: 16px;
 font-style: normal;
 font-weight: normal;
 font-size: 18px;
 line-height: 18px;
-/* identical to box height */
 
 display: flex;
 align-items: center;
@@ -33,27 +32,26 @@ letter-spacing: -2px;
 color: #000000;
 }
 .map{
-position: absolute;
-width: 304px;
-height: 256px;
-left: 28px;
-top: 169px;
-
-border-radius: 15px;
+  position: relative;
+  width: 81%;
+  height: 200px;
+  background-image: url('https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDEyMDFfMTY4%2FMDAxNjA2NzkzMjMxOTAx.IwCnCZnludpCGqKS1oaR1FWLMbwhleuIVR_Vg3IBci0g.Y09LouToCTDGoFUnOZNvhs6PsFBgmhckZXCNHEB9hP8g.PNG.sshh3160%2Fimage.png&type=sc960_832');
+  background-position: 0px 0px;
+  margin:0 auto;
 }
 .moremapbtn{
-  position: absolute;
-width: 26px;
-height: 26px;
-left: 299px;
-top: 175px;
+  position:abolute;
+}
+#list{
+  text-align: center;
 }
 .textlistbtn{
-position: absolute;
-width: 157px;
+position: relative;
+width: 81%;
 height: 18px;
-left: 28px;
-top: 462px;
+margin: 0 auto;
+margin-bottom: 17px;
+margin-top: 37px;
 
 font-style: normal;
 font-weight: normal;
