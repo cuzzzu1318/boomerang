@@ -67,7 +67,7 @@ body{
 
 .bmr-back{
   cursor: pointer;
-  position: relative;
+  position: absolute;
   left: calc(9.5% - 6px);
   top: 32px;
 }
