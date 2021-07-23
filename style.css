@@ -3,11 +3,10 @@ body{
 }
 
 .bmr-headline{
-  position: absolute;
-  top: 125px;
-  width: 304px;
+  position: relative;
   height: 20px;
   left: 28px;
+  margin-right: 56px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.37);
 
   font-family: Roboto;
