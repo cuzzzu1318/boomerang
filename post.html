@@ -11,16 +11,23 @@
     </style>
 </head>
 <body>
-    <img class="bmr-back" src="이미지\뒤로가기.png" alt="뒤로가기" onclick="history.back()">
-    <div class="local">지역</div>
-    <div id="title">게시물 제목</div>
-    <a href="Map.html">
-      <input type="button" class="bmr-btn" id="open_map" value="지도 보기">
-    </a>
+  <div class="wrap">
+    <img class="bmr-back" src="이미지\뒤로가기.svg" alt="뒤로가기" onclick="history.back()">
+    <div class="post">
+      <div class="input">
+        <div class="local">지역</div>
+        <div id="title">게시물 제목</div>
+      </div>
+      <a href="Map.html">
+        <div class="map">
+          <input type="button" class="bmr-btn" id="open_map" value="지도 보기">
+        </div>
+      </a>
+    </div>
     <div class="bmr-text" id="content">내용</div>
     <div class="lost">
-      <img src="이미지\부메랑 로고.png" alt="아이콘" title="아이콘">
+      <img src="이미지\부메랑 로고.svg" alt="아이콘" title="아이콘">
     </div>
-
+  </div>
 </body>
 </html>
