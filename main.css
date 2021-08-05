@@ -12,11 +12,15 @@ height: 38px;
 right: 28px;
 top: 32px;
 }
-.textmapbtn{
+#map{
 position: relative;
 width: 81%;
+height: auto;
+margin: auto;
+}
+.textmapbtn{
+position: relative;
 height: 18px;
-margin:0 auto;
 margin-bottom: 17px;
 margin-top: 16px;
 font-style: normal;
@@ -33,17 +37,15 @@ color: #000000;
 }
 .map{
   position: relative;
-  width: 81%;
-  height: 200px;
+  max-width: 768px;
+  height: ;
   background-image: url('https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDEyMDFfMTY4%2FMDAxNjA2NzkzMjMxOTAx.IwCnCZnludpCGqKS1oaR1FWLMbwhleuIVR_Vg3IBci0g.Y09LouToCTDGoFUnOZNvhs6PsFBgmhckZXCNHEB9hP8g.PNG.sshh3160%2Fimage.png&type=sc960_832');
-  background-position: 0px 0px;
-  margin:0 auto;
+  background-position: center;
+  background-repeat: repeat;
 }
 .moremapbtn{
   position:abolute;
-}
-#list{
-  text-align: center;
+  margin-right: 5px;
 }
 .textlistbtn{
 position: relative;
