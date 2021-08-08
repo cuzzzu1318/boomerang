@@ -8,7 +8,24 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-  <h1>주소에 저장됨.</h1>
+<body><h1>
+  <?php
+  echo "글 제목: ".$_GET['title'];
+   ?>
+</h1>
+<h2>
+  <?php
+  echo "글 내용: ".$_GET['content'];
+   ?>
+</h2>
+<h2>
+  사진:
+  <img src="이미지\<?php
+  echo $_GET['picture'];
+   ?>">
+
+
+</h2>
+
 
 </body>
