@@ -1,3 +1,4 @@
+
 .menubtn{
 position: absolute;
 width: 38px;
@@ -37,21 +38,27 @@ color: #000000;
 }
 .map{
   position: relative;
-  max-width: 768px;
-  height: ;
+  height:200px;
   background-image: url('https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDEyMDFfMTY4%2FMDAxNjA2NzkzMjMxOTAx.IwCnCZnludpCGqKS1oaR1FWLMbwhleuIVR_Vg3IBci0g.Y09LouToCTDGoFUnOZNvhs6PsFBgmhckZXCNHEB9hP8g.PNG.sshh3160%2Fimage.png&type=sc960_832');
   background-position: center;
   background-repeat: repeat;
 }
 .moremapbtn{
-  position:abolute;
-  margin-right: 5px;
+  position:relative;
+  float:right;
+  margin-right:5px;
+  margin-top:5px;
+}
+#list{
+  position: relative;
+  width: 81%;
+  height: auto;
+  margin: auto;
 }
 .textlistbtn{
 position: relative;
 width: 81%;
 height: 18px;
-margin: 0 auto;
 margin-bottom: 17px;
 margin-top: 37px;
 
@@ -82,4 +89,29 @@ width: 77.45px;
 height: 21px;
 left: 250px;
 top: 509px;
+}
+@media (min-width: 768px) {
+.textmapbtn{
+  font-size: 26px;
+}
+.textlistbtn{
+  font-size: 26px;
+}
+#map{
+position: relative;
+float:left;
+width: 50%;
+height:auto;
+}
+.map{
+  margin
+}
+#list{
+  position: relative;
+  width: 50%;
+  height: auto;
+  margin: auto;
+  display: inline-block;
+  margin-left:: 73px;
+}
 }
