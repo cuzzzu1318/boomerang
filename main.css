@@ -23,7 +23,7 @@ margin: auto;
 position: relative;
 height: 18px;
 margin-bottom: 17px;
-margin-top: 16px;
+margin-top: 20px;
 font-style: normal;
 font-weight: normal;
 font-size: 18px;
@@ -60,7 +60,7 @@ position: relative;
 width: 81%;
 height: 18px;
 margin-bottom: 17px;
-margin-top: 37px;
+margin-top: 20px;
 
 font-style: normal;
 font-weight: normal;
@@ -112,6 +112,5 @@ height:auto;
   height: auto;
   margin: auto;
   display: inline-block;
-  margin-left:: 73px;
 }
 }
