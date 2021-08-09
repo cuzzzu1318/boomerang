@@ -8,34 +8,38 @@ maximum-scale=1.0, minimum-scale=1.0">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <img src="이미지\부메랑 로고.svg" class="bmr-logo" onclick="location.href='main.html'">
-  <input type="image" class="bmr-back" src = "이미지\뒤로가기.svg" img onclick="history.back()">
-  <input type="text" class="search" placeholder="검색">
-  <img src="이미지\돋보기.svg" class="searchimg" alt="검색">
-  <select name="sort" class="bmr-slc" id="sort">
-    <option value="">정렬</option>
-    <option value="찾았다">찾았다</option>
-    <option value="찾는다">찾는다</option>
-  </select>
-<div class="divtable">
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">번호</th>
-      <th scope="col">제목</th>
-      <th scope="col">작성자</th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-    <tr >
-      <td>1</td>
-      <td>잃어버림</td>
-      <td>안성민</td>
-    </tr>
-    <tr height="1" bgcolor=""#000000;""><td></td></tr>
-  </tbody>
-</table>
-</div>
+  <div id="top" class="div-logo">
+    <img src="이미지\부메랑 로고.svg" class="bmr-logo" onclick="location.href='main.html'">
+    <input type="image" class="bmr-back" src = "이미지\뒤로가기.svg" img onclick="history.back()">
+  </div>
+  <div class="div-search">
+    <input type="text" class="search" placeholder="검색">
+    <img src="이미지\돋보기.svg" class="searchimg" alt="검색">
+  </div>
+    <select name="sort" class="bmr-slc" id="sort">
+      <option value="">정렬</option>
+      <option value="찾았다">찾았다</option>
+      <option value="찾는다">찾는다</option>
+    </select>
+  <div class="divtable">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">번호</th>
+        <th scope="col">제목</th>
+        <th scope="col">작성자</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+      <tr >
+        <td>1</td>
+        <td>잃어버림</td>
+        <td>안성민</td>
+      </tr>
+      <tr height="1" bgcolor=""#000000;""><td></td></tr>
+    </tbody>
+  </table>
+  </div>
 <input type="button" class="bmr-btn" id="writebtn"   value="글쓰기" onclick="location.href='write.html'" style="cursor:pointer ">
 </body>
 </html>
