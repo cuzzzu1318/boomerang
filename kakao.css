@@ -1,10 +1,10 @@
-.field-id{
+.field-id, .field-nickname{
   width: 100%;
   margin: 0 auto;
   position: relative;
 }
 
-#id{
+#id, #nickname{
   width: 81%;
   margin: 0 auto;
   margin-top: 16px;
@@ -12,7 +12,7 @@
   height: 36px;
 }
 
-#check-id{
+#check-id, #check-nickname{
   position: absolute;
   top: 4px;
   right: 9.5%;
@@ -21,31 +21,7 @@
   height: 30px;
   font-size: 10px;
   line-height: 11.72px;
-}
-
-.field-nickname{
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-}
-
-#nickname{
-  width: 81%;
-  margin: 0 auto;
-  margin-top: 16px;
-  display: block;
-  height: 36px;
-}
-
-#check-nickname{
-  position: absolute;
-  top: 4px;
-  right: 9.5%;
-  display: block;
-  padding: 10px;
-  height: 30px;
-  font-size: 10px;
-  line-height: 11.72px;
+  background-color: #EEB3B3;
 }
 
 #area{
