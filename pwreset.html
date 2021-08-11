@@ -5,28 +5,33 @@
     name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,
     maximum-scale=1.0, minimum-scale=1.0">
     <title>비밀번호 찾기 및 재설정</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="pwreset.css">
   </head>
-
   <body>
-    <div class="bmr-back">
-      <a href="main.html"><img src="이미지/뒤로가기.svg" alt="back"><a>
+    <div style="padding-top:90px;">
+      <div class="header">
+        <img src="이미지\뒤로가기.svg" class="bmr-back" onclick="history.back()">
+        <h1 class="logo">
+          <span class="title">비밀번호 재설정</span>
+        </h1>
+        <div class="bmr-headline">
+        </div>
+      </div>
+      <div class="field">
+        <div class="field-pw">
+          <input type="password" class="bmr-text" id="new-pw" placeholder="새 비밀번호를 입력해 주세요">
+        </div>
+        <div class="field-pw">
+          <input type="password" class="bmr-text" id="new-pw" placeholder="새 비밀번호 확인">
+        </div>
+        <div>
+          <p id="match">비밀번호가 일치합니다.</p>
+        </div>
+        <div>
+          <input type="button" class="bmr-btn" id="store" value="설정하기">
+        </div>
+      </div>
     </div>
-    <div class="bmr-logo">
-      <a href="main.html"><img src="이미지/부메랑 로고.svg" alt="부메랑"></a>
-    </div>
-
-    <div class="pw_title">
-      비밀번호 재설정
-    </div>
-    <div class="big_box">
-      <div><input type="email" class="bmr-text" id="first" placeholder="새 비밀번호를 입력해 주세요"></div>
-      <div><input type="tel" class="bmr-text" placeholder="새 비밀번호 확인"></div>
-      <div><input type="text" class="boolean" value="비밀번호가 일치합니다."></div>
-      <div><input type="button" class="bmr-btn" value="비밀번호 재설정"></div>
-    </div>
-
-
-
   </body>
 </html>

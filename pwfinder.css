@@ -1,58 +1,88 @@
-body{
-  position: relative;
-  margin: auto;
-}
-header{
-  display: flex;
-  margin-top: 26px;
-  width: calc(81% + 12px)
-}
-.bmr-back{
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  left: 28px;
-  top: 32px;
-}
-.bmr-headline{
-  width: calc(81% + 12px);
-}
-.big_box{
-  position:relative;
-  left: 28px;
-  width: calc(81% + 12px);
-  min-height: 285px;
-
-  display: block;
+.logo{
+  margin: 0 104px;
+  padding-top: 32px;
+  padding-bottom: 11px;
   text-align: center;
+}
 
+h1{
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
 }
-.box{
+
+.field{
+  margin: 0 auto;
+  width: 90%;
+  max-width: 600px;
+  display: block;
+  box-sizing: border-box;
+}
+
+.field-num, .field-tel{
+  position: relative;
+  width: 100%;
+  padding-right: 93px;
+  box-sizing: border-box;
+}
+
+.field-id{
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#id, #tel, #num{
+  width: 100%;
+  padding: 0px 11px 1px 15px;
   margin-top: 16px;
+  display: block;
+  height: 48px;
+  box-sizing: border-box;
 }
-.bmr-text{
-  /*width: calc(81% + 12px);*/
-  width: 292px;
-  height: 36px;
+
+#check-num, #send-num{
+  position: absolute;
+  box-sizing: border-box;
+  top: 0;
+  right: 0;
+  width: 85px;
+  display: block;
+  padding: 10px;
+  height: 49px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #EEB3B3;
+  line-height: 11.72px;
 }
-#timer{
-  margin-top: 9px;
+
+#pw-info{
+  position: relative;
+  width: 100%
+  height: 22px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 10px;
-  line-height: 12px;
-  color: #FF0000;
-  margin-right: 230px;
+  font-size: 15px;
+  line-height: 11.72px;
+  margin: 0 auto;
+  margin-top: 8px;
+  border: none;
+  color: #F44336;
 }
 
-.bmr-btn{
-  /*width: calc(81% + 12px);*/
-  width: 304px;
-  height: 38px;
+#next{
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 16px;
+  display: block;
+  height: 48px;
+  background: #EEB3B3;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
 }
-#small-btn{
-  /*width: calc(40.5% + 12px);*/
-  width: 170px;
-  margin-left: 132px;
+
+input::placeholder{
+  color: #CCCCCC;
 }
