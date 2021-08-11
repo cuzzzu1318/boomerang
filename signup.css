@@ -1,12 +1,3 @@
-#wrap{
-  width: 100%;
-  height: 100%;
-}
-
-.main-wrapper{
-  position: static;
-}
-
 .header{
   position: fixed;
   width: 100%;
