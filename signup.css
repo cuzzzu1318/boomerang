@@ -90,23 +90,3 @@ h1{
   font-size: 16px;
   font-weight: 600;
 }
-
-input{
-  appearance: none;
-  -webkit-appearance: none;
-  -webkit-border-radius: 0;
-}
-
-select{
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: url('이미지/선택.svg') no-repeat 98% 50% #fff;
-}
-select::-ms-expand{
-  display:none;
-}
-
-input::placeholder{
-  color: #CCCCCC;
-}

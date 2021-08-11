@@ -83,6 +83,26 @@ body{
   top: 32px;
 }
 
+input{
+  appearance: none;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+
+select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url('이미지/선택.svg') no-repeat 98% 50% #fff;
+}
+select::-ms-expand{
+  display:none;
+}
+
+input::placeholder{
+  color: #CCCCCC;
+}
+
 @media screen and (min-width: 768px) {
   .bmr-headline{
     font-size: 16px;
