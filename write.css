@@ -72,7 +72,6 @@ div.upload{
 
 #uploadpic{
   margin-top: 60px;
-  display: block;
   cursor: pointer;
   padding: 10px 0;
   width: 116px;
@@ -83,7 +82,9 @@ div.upload{
   font-weight: 600;
   box-sizing: border-box;
   display: flex;
+  vertical-align: middle;
   align-items: center;
+  justify-content: center;
 }
 
 #write{
