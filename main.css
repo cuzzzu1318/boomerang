@@ -1,4 +1,3 @@
-
 .menubtn{
 position: absolute;
 width: 38px;
@@ -13,28 +12,22 @@ height: 38px;
 right: 28px;
 top: 32px;
 }
-#map{
+#map,#list{
 position: relative;
 width: 81%;
 height: auto;
 margin: auto;
 }
-.textmapbtn{
+.textmapbtn,.textlistbtn{
 position: relative;
 height: 18px;
 margin-bottom: 17px;
 margin-top: 20px;
-font-style: normal;
-font-weight: normal;
 font-size: 18px;
 line-height: 18px;
 
 display: flex;
-align-items: center;
-text-align: center;
 letter-spacing: -2px;
-
-color: #000000;
 }
 .map{
   position: relative;
@@ -49,52 +42,14 @@ color: #000000;
   margin-right:5px;
   margin-top:5px;
 }
-#list{
-  position: relative;
-  width: 81%;
-  height: auto;
-  margin: auto;
-}
-.textlistbtn{
-position: relative;
-width: 81%;
-height: 18px;
-margin-bottom: 17px;
-margin-top: 20px;
-
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 18px;
-/* identical to box height */
-
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: -2px;
-
-color: #000000;
-
-}
 .list{
-  position: absolute;
-  width: 304px;
-  height: 218px;
-  left: 28px;
-  top: 497px;
+
 }
 .morelistbtn{
-  position: absolute;
-width: 77.45px;
-height: 21px;
-left: 250px;
-top: 509px;
+
 }
 @media (min-width: 768px) {
-.textmapbtn{
-  font-size: 26px;
-}
-.textlistbtn{
+.textmapbtn,.textlistbtn{
   font-size: 26px;
 }
 #map{
@@ -103,7 +58,14 @@ float:left;
 width: 50%;
 height:auto;
 }
-.textmapbtn{
+#list{
+  position: relative;
+  width: 50%;
+  height: auto;
+  margin: auto;
+  display: inline-block;
+}
+.textmapbtn,.textlistbtn{
   width: 81%;
   margin: auto;
   margin-bottom: 17px;
@@ -113,18 +75,5 @@ height:auto;
   width: 81%;
   height: 500px;
   margin: auto;
-}
-#list{
-  position: relative;
-  width: 50%;
-  height: auto;
-  margin: auto;
-  display: inline-block;
-}
-.textlistbtn{
-  width: 81%;
-  margin: auto;
-  margin-bottom: 17px;
-  margin-top: 20px;
 }
 }
