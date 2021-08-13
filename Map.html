@@ -26,7 +26,7 @@
       </div>
     </div>
 
-    <div class="help">
+    <div class="frame">
       <div id="map" style="width:100%;height:400px;"></div>
       <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	92f1eb1068764300ceb3f371fca80a65"></script>
       <script>
@@ -35,12 +35,27 @@
                 center: new kakao.maps.LatLng(35.24572314288633, 128.692912329970653),
                 level: 3
             };
-        var map = new kakao.maps.Map(mapContainer, mapOption);
-        var markerPosition = new kakao.maps.LatLng(35.24572314288633, 128.69291232997065)
-        var marker = new kakao.maps.Marker({
-          position: markerPosition
+        var map = new kakao.maps.Map(mapContainer, mapOption); //지도 생성
+
+        var imageSrc='http://img.danawa.com/prod_img/500000/143/429/img/4429143_1.jpg?shrink=360:360&_v=20200519100605', //이미지 주소
+            imageSize = new kakao.maps.Size(64, 69), //이미지 크기
+            imageOption = {offset: new kakao.maps.Point(27,69)}; //마커 안에서의 이미지 좌표
+        var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption);
+        var marker = new kakao.maps.Marker({ //마커 생성
+          position: map.getCenter(),
+          image: markerImage,
+          clickable: true
         });
-        marker.setMap(map);
+        marker.setMap(map); //마커 표시
+        kakao.maps.event.addListener(map, 'click', function(mouseEvent) {
+          var latlng = mouseEvent.latLng;
+          marker.setPosition(latlng);
+          //위도 latlng.getLat(), 경도 latlng.getLng()
+        });
+        kakao.maps.event.addListener(marker, 'click', function() {
+              location.href="post.html"
+        });
+
       </script>
     </div>
   </body>
