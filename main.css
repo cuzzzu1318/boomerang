@@ -103,8 +103,16 @@ float:left;
 width: 50%;
 height:auto;
 }
+.textmapbtn{
+  width: 81%;
+  margin: auto;
+  margin-bottom: 17px;
+  margin-top: 20px;
+}
 .map{
-  margin
+  width: 81%;
+  height: 500px;
+  margin: auto;
 }
 #list{
   position: relative;
@@ -112,5 +120,11 @@ height:auto;
   height: auto;
   margin: auto;
   display: inline-block;
+}
+.textlistbtn{
+  width: 81%;
+  margin: auto;
+  margin-bottom: 17px;
+  margin-top: 20px;
 }
 }
