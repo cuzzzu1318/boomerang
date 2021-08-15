@@ -1,5 +1,26 @@
-<!doctype html>
-
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<?php
+  $mysqli = new mysqli("localhost", "root", "bo0apfkd", "boomerang");
+  $sql = "
+  INSERT INTO topic
+    (title, description, writer, created)
+    VALUES(
+      '{$_POST['title']}',
+      '{$_POST['content']}',
+      'cuzzzu1318',
+      NOW()
+    )
+";
+$result = $mysqli->query($sql);
+if ($result == false) {
+  echo $mysqli->error;
+}else{
+    echo "글 제목: ".$_POST['title'];
+    echo "글 내용: ".$_POST['content'];
+    echo $_POST['picture'];
+}
+ ?>
 <head>
   <title>부메랑 - 글 쓰기 정보</title>
   <meta charset="utf-8"
@@ -8,24 +29,9 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body><h1>
-  <?php
-  echo "글 제목: ".$_GET['title'];
-   ?>
-</h1>
-<h2>
-  <?php
-  echo "글 내용: ".$_GET['content'];
-   ?>
-</h2>
-<h2>
-  사진:
-  <img src="이미지\<?php
-  echo $_GET['picture'];
-   ?>">
-
-
-</h2>
+<body>
 
 
 </body>
+
+</html>
