@@ -4,10 +4,12 @@
   $mysqli = new mysqli("localhost", "root", "bo0apfkd", "boomerang");
   $sql = "
   INSERT INTO topic
-    (title, description, writer, created)
+    (category, title, description, picture,  writer, created)
     VALUES(
+      '{$_POST['select']}',
       '{$_POST['title']}',
       '{$_POST['content']}',
+      '{$_POST['picture']}',
       'cuzzzu1318',
       NOW()
     )
