@@ -8,16 +8,21 @@
   <link rel="stylesheet" href="write.css">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div id="layout-top">
-    <img class="bmr-back" class="btn" onclick="history.back()" src="이미지\뒤로가기.svg" alt="뒤로가기">
-    <h1 class="logo">
-      <span class="title">글 작성</span>
-    </h1>
-    <label for="writebtn" class="bmr-btn" id="write">저장하기</label>
-    <div class="bmr-headline">
+  <header>
+    <div class="top">
+      <img class="bmr-back" src="이미지\뒤로가기.svg" alt="뒤로가기" onclick="history.back()">
+      <h1>
+        <span>글 작성</span>
+      </h1>
+      <div class="top">
+        <label for="writebtn" class="bmr-btn" id="write">저장하기</label>
+      </div>
     </div>
-  </div>
+    <div class="bmr-headline"></div>
+  </header>
+    
   <div id="contents">
     <form action="write_process.php" method="post">
       <select class="bmr-slc" id="category" name="select">
