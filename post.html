@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>부메랑</title>
-    <link rel="stylesheet" href="./post.css">
-    <link rel="stylesheet" href="./style.css">
-    <style>
-        img {display: block; margin: 0px auto;}
-    </style>
-</head>
-<body>
-  <div class="wrap">
-    <img class="bmr-back" src="이미지\뒤로가기.svg" alt="뒤로가기" onclick="history.back()">
-    <div class="post">
-      <div class="input">
-        <div class="local">지역</div>
-        <div id="title">게시물 제목</div>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>부메랑</title>
+      <link rel="stylesheet" href="post.css">
+      <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="top">
+        <img class="bmr-back" src="이미지\뒤로가기.svg" alt="뒤로가기" onclick="history.back()">
+        <h1>
+          <span>게시 글</span>
+        </h1>
+        <a href="Map.html">
+          <div class="top">
+            <input type="button" class="bmr-btn" id="open_map" value="지도 보기">
+          </div>
+        </a>
       </div>
-      <a href="Map.html">
-        <div class="map">
-          <input type="button" class="bmr-btn" id="open_map" value="지도 보기">
-        </div>
-      </a>
+      <div class="bmr-headline"></div>
+    </header>
+
+    <div class="wrap">
+      <div class="post">
+        <!-- <input type="text" id="category" value=""> -->
+        <input type="text" id="local" value="지역">
+        <input type="text" id="title" value="게시물 제목">
+      </div>
+      <div>
+        <input type="text" class="bmr-text-dark" id="content" value="내용">
+      </div>
     </div>
-    <div class="bmr-text" id="content">내용</div>
-    <div class="lost">
-      <img src="이미지\부메랑 로고.svg" alt="아이콘" title="아이콘">
-    </div>
-  </div>
-</body>
+  </body>
 </html>

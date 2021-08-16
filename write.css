@@ -1,12 +1,5 @@
-div#layout-top{
-  height: 106px;
-}
-
-.logo{
-  margin: 0 104px;
-  padding-top: 32px;
-  padding-bottom: 11px;
-  text-align: center;
+header{
+  height: 50px;
 }
 
 h1{
@@ -15,7 +8,21 @@ h1{
   font-weight: bold;
 }
 
+#write{
+  text-align: center;
+  border: none;
+  font-size: 16px;
+  color: #EEB3B3;
+  font-weight: 600;
+  padding: 10px 0;
+  height: 28px;
+  cursor: pointer;
+  position: absolute;
+  right: 5%;
+}
+
 #contents{
+  padding-top: 16px;
   margin: 0 auto;
   width: 90%;
   display: block;
@@ -85,18 +92,4 @@ div.upload{
   vertical-align: middle;
   align-items: center;
   justify-content: center;
-}
-
-#write{
-  text-align: center;
-  border: none;
-  font-size: 16px;
-  color: #EEB3B3;
-  font-weight: 600;
-  padding: 10px 0;
-  height: 28px;
-  cursor: pointer;
-  position: absolute;
-  top: 32px;
-  right: 5%;
 }
