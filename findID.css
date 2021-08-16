@@ -1,39 +1,63 @@
-div#layout-top{
-  height: 125px;
+.logo{
+  margin: 0 104px;
+  padding-top: 32px;
+  padding-bottom: 11px;
+  text-align: center;
 }
 
-div#layout-contents{
-  height: 495px;
+h1{
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-#phonenum{
-  width: 292px;
-  height: 36px;
+.field{
+  margin: 0 auto;
+  width: 90%;
+  max-width: 600px;
+  display: block;
+  box-sizing: border-box;
+}
+
+.field-tel, .field-num{
+  position: relative;
+  width: 100%;
+  padding-right: 93px;
+  box-sizing: border-box;
+}
+
+#check-tel, #check-num{
   position: absolute;
-  left: 28px;
-  top: 161px;
+  box-sizing: border-box;
+  top: 0;
+  right: 0;
+  width: 85px;
+  display: block;
+  padding: 10px;
+  height: 49px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #EEB3B3;
+  line-height: 11.72px;
 }
 
-#certification{
-  height: 38px;
-  width: 170px;
-  position: absolute;
-  left: 162px;
-  top: 215px;
-}
-
-#numinput{
-  width: 292px;
-  height: 36px;
-  position: absolute;
-  left: 28px;
-  top: 269px;
+#tel, #num{
+  width: 100%;
+  padding: 0px 11px 1px 15px;
+  margin-top: 16px;
+  display: block;
+  height: 48px;
+  box-sizing: border-box;
 }
 
 #findID{
-  width: 304px;
-  height: 38px;
-  position: absolute;
-  left: 28px;
-  top: 323px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 16px;
+  display: block;
+  height: 48px;
+  background: #EEB3B3;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
 }

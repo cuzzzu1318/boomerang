@@ -1,47 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>부메랑 - 돌아와 내물건_아이디찾기</title>
+    <title>아이디 찾기</title>
     <meta charset="utf-8"
     name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,
     maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="findID.css">
     <link rel="stylesheet" href="style.css">
   </head>
+
   <body>
-    <div id="layout-top">
-      <img class="go-back" class="btn" onclick="history.back()"
-        src="이미지\뒤로가기.svg"
-        alt="뒤로가기"
-        style="cursor: pointer;
-        position: absolute;
-        left: 28px;
-        top: 32px;"
-      >
-      <a href="main.html">
-        <img class="bmr-logo" src="이미지\부메랑 로고.svg"
-          alt="로고">
-      </a>
-    </div>
-    <div id="layout-contents">
+    <header style="height: 90px;">
+      <img src="이미지\뒤로가기.svg" class="bmr-back" onclick="history.back()">
+      <h1 class="logo">
+        <span class="title">아이디 찾기</span>
+      </h1>
       <div class="bmr-headline">
-        아이디 찾기
       </div>
-      <form class="" action="index.html" method="post">
-        <input type="text" class="bmr-text" id="phonenum" placeholder="전화번호를 입력해주세요."
-          name="phonenum"
-        >
-        <input type="button" class="bmr-btn" id="certification" value="인증번호 전송"
-          name="num"
-        >
-        <input type="text" class="bmr-text" id="numinput" placeholder="인증번호를 입력해주세요."
-          name="numinput"
-        >
-        <input type="submit" class="bmr-btn" id="findID" value="아이디 찾기"
-          name="findID"
-        >
+    </header>
+
+    <div class="field">
+      <form action="index.php" accept-charset="utf-8" name="user-info" method="get">
+        <div class="field-tel">
+          <input type="text" class="bmr-text-light" id="tel" name="tel" placeholder="'-'없이 번호를 입력해주세요.">
+          <input type="button" class="bmr-btn" id="check-tel" value="인증번호">
+        </div>
+        <div class="field-num">
+          <input type="text" class="bmr-text-light" id="num" name="num" placeholder="인증번호를 입력해주세요.">
+          <input type="button" class="bmr-btn" id="check-num" value="확인">
+          <p id="pw-info"> 유효시간 3분 30초 </p>
+        </div>
+        <div class="btn-next">
+          <a href="pwreset.html" style="text-decoration: none;">
+            <input type="submit" class="bmr-btn" id="findID" value="아이디 찾기">
+          </a>
+        </div>
       </form>
     </div>
-
   </body>
 </html>
