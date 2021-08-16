@@ -2,27 +2,29 @@
 <html lang="ko" dir="ltr">
 <?php
   $mysqli = new mysqli("localhost", "root", "bo0apfkd", "boomerang");
-  $filterd_title = $mysqli->real_escape_string($_POST['title']);
-  $filterd_content = $mysqli->real_escape_string($_POST['content']);
+  $filterd = array(
+    'title'=>$mysqli->real_escape_string($_POST['title']),
+    'content'=>$mysqli->real_escape_string($_POST['content'])
+  );
   $sql = "
   INSERT INTO topic
     (category, title, description, picture,  writer, created)
     VALUES(
       '{$_POST['select']}',
-      '{$filterd_title}',
-      '{$filterd_content}',
+      '{$filterd['title']}',
+      '{$filterd['content']}',
       '{$_POST['picture']}',
       'cuzzzu1318',
       NOW()
     )
 ";
+echo $sql;
 $result = $mysqli->query($sql);
 if ($result == false) {
   echo $mysqli->error;
 }else{
-    echo "글 제목: ".$_POST['title'];
-    echo "글 내용: ".$_POST['content'];
-    var_dump($_POST['picture']);
+    echo "<br>글 제목: ".$filterd['title']."</br>";
+    echo "<br>글 내용: ".$filterd['content']."</br>";
 
 }
  ?>
