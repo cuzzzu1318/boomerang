@@ -25,6 +25,8 @@ if ($result == false) {
 }else{
     echo "<br>글 제목: ".$filterd['title']."</br>";
     echo "<br>글 내용: ".$filterd['content']."</br>";
+    echo("<script>location.replace('list.html');</script>"); 
+
 
 }
  ?>
