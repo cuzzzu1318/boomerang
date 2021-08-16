@@ -99,7 +99,7 @@ select::-ms-expand{
   display:none;
 }
 
-input::placeholder{
+input::placeholder, textarea::placeholder{
   color: #CCCCCC;
 }
 
