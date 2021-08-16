@@ -2,13 +2,15 @@
 <html lang="ko" dir="ltr">
 <?php
   $mysqli = new mysqli("localhost", "root", "bo0apfkd", "boomerang");
+  $filterd_title = $mysqli->real_escape_string($_POST['title']);
+  $filterd_content = $mysqli->real_escape_string($_POST['content']);
   $sql = "
   INSERT INTO topic
     (category, title, description, picture,  writer, created)
     VALUES(
       '{$_POST['select']}',
-      '{$_POST['title']}',
-      '{$_POST['content']}',
+      '{$filterd_title}',
+      '{$filterd_content}',
       '{$_POST['picture']}',
       'cuzzzu1318',
       NOW()
@@ -20,7 +22,8 @@ if ($result == false) {
 }else{
     echo "글 제목: ".$_POST['title'];
     echo "글 내용: ".$_POST['content'];
-    echo $_POST['picture'];
+    var_dump($_POST['picture']);
+
 }
  ?>
 <head>
