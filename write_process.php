@@ -8,7 +8,7 @@
   );
   $sql = "
   INSERT INTO topic
-    (category, title, description, picture,  writer, created)
+    (category, title, description, picture,  id, created)
     VALUES(
       '{$_POST['select']}',
       '{$filterd['title']}',
