@@ -38,7 +38,7 @@ h1{
   box-sizing: border-box;
 }
 
-#check-num, #send-num{
+#check-num, #check-tel{
   position: absolute;
   box-sizing: border-box;
   top: 0;
@@ -53,18 +53,15 @@ h1{
   line-height: 11.72px;
 }
 
-#pw-info{
-  position: relative;
-  width: 100%
-  height: 22px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 11.72px;
+#timer{
   margin: 0 auto;
-  margin-top: 8px;
-  border: none;
+  text-align: center;
+  position: absolute;
+  box-sizing: border-box;
+  top: calc(50% - 9.2px);
+  right: 105px;
+  font-size: 14px;
+  font-weight: 600;
   color: #F44336;
 }
 

@@ -1,34 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>부메랑</title>
-    <link rel="stylesheet" href="./mypage.css">
-    <link rel="stylesheet" href="./style.css">
-    <style>
-        img {display: block; margin: 0px auto;}
-    </style>
-</head>
-<body>
-    <img class="bmr-back" src="이미지\뒤로가기.svg" alt="뒤로가기" onclick="history.back()">
-    <a href="main.html">
-      <div id="top" class="div-logo">
-        <img src="이미지\부메랑 로고.svg" class="bmr-logo" onclick="location.href='main.html'">
+<html lang="ko">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>부메랑</title>
+      <link rel="stylesheet" href="mypage.css">
+      <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="top">
+        <img class="bmr-back" src="이미지\뒤로가기.svg" alt="뒤로가기" onclick="history.back()">
+        <h1>
+          <span>마이페이지</span>
+        </h1>
+        <input type="button" class="bmr-btn" id="modify" value="정보 수정" onClick="location.href='changeinformation.html'">
       </div>
-    </a>
-    <div class="bmr-headline">
-      내 정보
-      <input type="button" id="reset" value="수정"
-      onClick="location.href='changeinformation.html'">
-    </div>
+      <div class="bmr-headline"></div>
+    </header>
+
     <div class="wrap">
-      <input type="text" class="bmr-text" id="id" disabled value="아이디">
-      <input type="text" class="bmr-text" id="nickname" disabled value="닉네임">
-      <input type="text" class="bmr-text" id="residence" disabled value="거주지">
-      <input type="text" class="bmr-text" id="found" disabled value="찾은 물건 수">
-      <input type="text" class="bmr-text" id="find" disabled value="찾아준 물건 수">
+      <input type="text" class="bmr-text-light" id="id" value="아이디">
+      <input type="text" class="bmr-text-light" id="nickname" value="닉네임">
+      <input type="text" class="bmr-text-light" id="residence" value="거주지">
+      <input type="text" class="bmr-text-light" id="found" value="찾은 물건 수">
+      <input type="text" class="bmr-text-light" id="find" value="찾아준 물건 수">
       <input type="button" class="bmr-btn" id="all" value="내 게시글 모아보기">
     </div>
-</body>
+  </body>
 </html>

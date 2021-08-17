@@ -9,47 +9,44 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div id="layout-top">
-      <img class="go-back" class="bmr-back" onclick="history.back()"
-        src="이미지\뒤로가기.svg"
-        alt="뒤로가기"
-        style="cursor: pointer;
-        position: absolute;
-        left: 28px;
-        top: 32px;"
-      >
-      <a href="main.html">
-        <img class="bmr-logo" src="이미지\부메랑 로고.svg"
-          alt="로고">
-      </a>
-    </div>
-    <div id="layout-contents">
-      <div class="bmr-headline">
-        정보 수정
+    <header>
+      <div class="top">
+        <img class="bmr-back" src="이미지\뒤로가기.svg" alt="뒤로가기" onclick="history.back()">
+        <h1>
+          <span>정보 수정</span>
+        </h1>
       </div>
-      <form class="" action="index.html" method="get">
-        <input type="text" class="bmr-text" id="showID" disabled value="아이디"
-          name="ID"
-        >
-        <input type="text" class="bmr-text" id="shownickname" disabled value="닉네임"
-          name="nickname"
-        >
-        <input type="text" class="bmr-text" id="inputPW" placeholder="비밀번호"
-          name="password"
-        >
-        <input type="text" class="bmr-text" id="reinputPW" placeholder="비밀번호 확인"
-          name="re password"
-        >
-        <select class="bmr-slc" name="select"
-          style="
-          height: 38px;
-          width: 304px;
-          position: absolute;
-          left: 28px;
-          top: 376px;">
+      <div class="bmr-headline"></div>
+    </header>
+
+    <div class="field">
+      <form action="index.html" method="get">
+        <div class="field-id">
+          <input type="text" class="bmr-text-light" id="id" disabled value="아이디" name="ID">
+        </div>
+        <div class="field-pw">
+          <input type="password" class="bmr-text-light" id="password" name="password" placeholder="현재 비밀번호를 입력해주세요.">
+          <input type="password" class="bmr-text-light" id="re-password" name="re_password" placeholder="새 비밀번호를 입력해주세요.">
+          <p id="pw-info"> 비밀번호는 영문, 특수기호, 숫자를 포함 ~~~~ </p>
+          <input type="password" class="bmr-text-light" id="re-password" name="re_password" placeholder="새 비밀번호 확인">
+        </div>
+        <div class="field-nickname">
+          <input type="text" class="bmr-text-light" id="nickname" name="nickname" value="닉네임" placeholder="닉네임을 입력해주세요.">
+          <input type="button" class="bmr-btn" id="check-nickname" value="중복확인">
+        </div>
+        <div class="field-tel">
+          <input type="text" class="bmr-text-light" id="tel" name="tel" value="01012345678" placeholder="'-'없이 번호를 입력해주세요.">
+          <input type="button" class="bmr-btn" id="check-tel" value="인증번호">
+        </div>
+        <div class="field-num">
+          <input type="text" class="bmr-text-light" id="num" name="num" placeholder="인증번호를 입력해주세요.">
+          <input type="button" class="bmr-btn" id="check-num" value="확인">
+          <span id="timer">3:30</span>
+        </div>
+        <select class="bmr-slc" id="area" name="select">
           <option
             style="color: rgba(0, 0, 0, 0.54);">
-            =====거주지역을 선택해 주세요.=====
+                 거주지역을 선택해 주세요.
           </option>
           <option>
             서울 / 경기
@@ -70,11 +67,8 @@
             제주
           </option>
         </select>
-        <input type="submit" class="bmr-btn" id="change" value="정보 수정"
-          name="정보수정"
-        >
+        <input type="submit" class="bmr-btn" id="change" value="저장하기" name="정보수정">
       </form>
     </div>
-
   </body>
 </html>
