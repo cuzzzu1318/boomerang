@@ -1,3 +1,42 @@
+header{
+  height: 50px;
+  background-color: #FEB3B3;
+}
+
+#login{
+  text-align: center;
+  background-color: #FEB3B3;
+  justify-content: center;
+  border: none;
+  font-size: 16px;
+  color: #FFFFFF;
+  font-weight: 540;
+  padding: 10px 0;
+  height: 28px;
+  cursor: pointer;
+  position: absolute;
+  right: 90px;
+}
+
+#signup{
+  text-align: center;
+  background-color: #FEB3B3;
+  justify-content: center;
+  border: none;
+  font-size: 16px;
+  color: #FFFFFF;
+  font-weight: 540;
+  padding: 10px 0;
+  height: 28px;
+  cursor: pointer;
+  position: absolute;
+  right: 18px;
+
+  /* border: none;
+  background-color: #FEB3B3;
+  color: #FFFFFF; */
+}
+
 .menubtn{
 position: absolute;
 width: 38px;
