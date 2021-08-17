@@ -1,3 +1,14 @@
+<?php
+    $mysqli = new mysqli("localhost", "root", "bo0apfkd", "boomerang");
+    if (isset($_GET['cur_page'])) {
+      $cur_page = $_GET['cur_page'];
+    }else {
+      $cur_page = 1;
+    }
+    $show = 10;
+    $start = (($cur_page-1)*$show);
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,14 +41,39 @@ maximum-scale=1.0, minimum-scale=1.0">
         <th scope="col">작성자</th>
       </tr>
     </thead>
-    <tbody></tbody>
-      <tr >
-        <td>1</td>
-        <td>잃어버림</td>
-        <td>안성민</td>
-      </tr>
-      <tr height="1" bgcolor=""#000000;""><td></td></tr>
-    </tbody>
+    <?php
+    $sql = "
+      SELECT * FROM topic ORDER BY num DESC LIMIT $start, $show ;
+    ";
+    $result = $mysqli->query($sql);
+    if ($result == false) {
+    echo $mysqli->error;
+    }else{
+      if ($result->num_rows > 0) {
+        while ($row = $result->fetch_array()) {
+          $article = array(
+            'num' => $row['num'],
+            'category' => htmlspecialchars($row['category']),
+            'title' => htmlspecialchars($row['title']),
+            'description' => htmlspecialchars($row['description']),
+            'picture' => htmlspecialchars($row['picture']),
+            'id' => htmlspecialchars($row['id']),
+            'created' => htmlspecialchars($row['created'])
+          );
+        ?>
+
+        <tbody>
+         <tr style="height: 20px;">
+           <td><?=$row['num']?></td>
+           <td><?=$row['title']?></td>
+           <td><?=$row['id']?></td>
+         </tr>
+        </tbody>
+        <?php
+      }
+      }
+    }
+     ?>
   </table>
   </div>
   <div class="div-writebtn">
