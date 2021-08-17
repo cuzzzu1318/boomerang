@@ -63,7 +63,7 @@ maximum-scale=1.0, minimum-scale=1.0">
         ?>
 
         <tbody>
-         <tr style="height: 20px;">
+         <tr style="height: 20px; cursor: pointer;" onclick="location.replace('post.php?num=<?=$row['num']?>');">
            <td><?=$row['num']?></td>
            <td><?=$row['title']?></td>
            <td><?=$row['id']?></td>
