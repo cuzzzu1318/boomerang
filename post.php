@@ -8,16 +8,22 @@
   if ($result == false) {
   echo $mysqli->error;
   }else{
-    $row = $result->fetch_array(MYSQLI_BOTH);
-    $article = array(
-      'num' => $row['num'],
-      'category' => htmlspecialchars($row['category']),
-      'title' => htmlspecialchars($row['title']),
-      'description' => htmlspecialchars($row['description']),
-      'picture' => htmlspecialchars($row['picture']),
-      'id' => htmlspecialchars($row['id']),
-      'created' => htmlspecialchars($row['created'])
-    );
+    if ($result->num_rows > 0) {
+      $row = $result->fetch_array(MYSQLI_BOTH);
+      $article = array(
+        'num' => $row['num'],
+        'category' => htmlspecialchars($row['category']),
+        'title' => htmlspecialchars($row['title']),
+        'description' => htmlspecialchars($row['description']),
+        'picture' => htmlspecialchars($row['picture']),
+        'id' => htmlspecialchars($row['id']),
+        'created' => htmlspecialchars($row['created'])
+      );
+    }else{
+      echo '<script>alert("잘못된 접근입니다!");</script>';
+      echo("<script>location.replace('list.html');</script>");
+    }
+
   }
 
 
