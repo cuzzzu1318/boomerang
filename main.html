@@ -10,29 +10,32 @@
   <body>
     <header>
       <div class="top">
-        <img class="bmr-back" src="이미지\뒤로가기.svg" alt="뒤로가기" onclick="history.back()">
         <img src="이미지\부메랑 로고.svg" class ="bmr-logo" onclick="location.href='main.html'">
-        <input type="button" class="bmr-btn" id="login" name="login" value="LOGIN">
-        <input type="button" class="bmr-btn" id="signup" name="signup" value="SIGNUP">
+        <a href="login.html">
+          <div class="top">
+            <input type="button" class="bmr-btn" id="login" name="login" value="LOGIN">
+          </div>
+        </a>
       </div>
     </header>
-
-    <div id="map">
+    <div class="wrap">
+      <div id="map">
         <a onclick="location.href='Map.html'" class="textmapbtn"style="cursor:pointer">
           지도에서 찾을래요!
         </a>
-          <div class="map">
-              <a class="moremapbtn"  href="https://map.kakao.com/?urlX=885530&urlY=489257&urlLevel=4&map_type=TYPE_MAP&map_hybrid=false">
-                <img src="이미지/지도 전체화면.svg">
-              </a>
-          </div>
-    </div>
-    <div id="list">
-      <a onclick="location.href='list.php'" class="textlistbtn"style="cursor:pointer">
-        게시판에서 찾을래요!
-      </a>
-      <img src="이미지/게시판.svg" class="list">
-     <img src="이미지/더 보기.svg" class="morelistbtn" onclick="location.href='list.html'" style="cursor:pointer">
+        <div class="map">
+            <a class="moremapbtn"  href="https://map.kakao.com/?urlX=885530&urlY=489257&urlLevel=4&map_type=TYPE_MAP&map_hybrid=false">
+              <img src="이미지/지도 전체화면.svg">
+            </a>
+        </div>
+      </div>
+      <div id="list">
+        <a onclick="location.href='list.php'" class="textlistbtn"style="cursor:pointer">
+          게시판에서 찾을래요!
+        </a>
+        <img src="이미지/게시판.png" class="list">
+       <img src="이미지/더 보기.png" class="morelistbtn" onclick="location.href='list.php'" style="cursor:pointer">
+      </div>
     </div>
   </body>
 </html>
