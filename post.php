@@ -1,6 +1,11 @@
 <?php
   $mysqli = new mysqli("localhost", "root", "bo0apfkd", "boomerang");
-  $post_no = $_GET['num'];
+  if (isset($_GET['num'])) {
+    $post_no = $_GET['num'];
+  }else{
+    echo '<script>alert("잘못된 접근입니다!");</script>';
+    echo("<script>location.replace('list.php');</script>");
+  }
   $sql = "
     SELECT * FROM topic WHERE num = $post_no;
   ";
@@ -21,7 +26,7 @@
       );
     }else{
       echo '<script>alert("잘못된 접근입니다!");</script>';
-      echo("<script>location.replace('list.html');</script>");
+      echo("<script>location.replace('list.php');</script>");
     }
 
   }
@@ -42,7 +47,7 @@
   <body>
     <header>
       <div class="top">
-        <img class="bmr-back" src="이미지\뒤로가기.svg" alt="뒤로가기" onclick="history.back()">
+        <img class="bmr-back" src="이미지\색 뒤로가기.svg" alt="뒤로가기" onclick="history.back()">
         <h1>
           <span>게시 글</span>
         </h1>
@@ -65,7 +70,10 @@
         <textarea name="content" class="bmr-text-light" id="content" cols="30" rows="10" disabled><?=$article['description']?></textarea>
       </div>
       <div>
-        <input type="image" class="bmr-text-light" id="content" value="사진" disabled>
+        <input type="image" src="이미지/지도.png" id="content" value="사진" disabled>
+      </div>
+      <div>
+        <input type="button" onclick="location.href='list.php'"; id="go_list" class="bmr-btn"value="목록">
       </div>
     </div>
   </body>
