@@ -21,13 +21,13 @@ h1{
   justify-content: center;
   border: none;
   font-size: 16px;
-  color: #EEB3B3;
+  color: #FEB3B3;
   font-weight: 600;
   padding: 10px 0;
   height: 28px;
   cursor: pointer;
   position: absolute;
-  right: 5%;
+  right: 18px;
 }
 
 #id, #nickname, #residence, #found, #find{
@@ -45,7 +45,7 @@ h1{
   margin-top: 16px;
   display: block;
   height: 48px;
-  background: #EEB3B3;
+  background: #FEB3B3;
   color: #FFFFFF;
   font-size: 16px;
   font-weight: 600;
