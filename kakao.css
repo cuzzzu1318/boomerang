@@ -16,14 +16,14 @@ h1{
   box-sizing: border-box;
 }
 
-.field-id, .field-nickname{
+.field-nickname{
   position: relative;
   width: 100%;
   padding-right: 93px;
   box-sizing: border-box;
 }
 
-#id, #nickname{
+#nickname{
   width: 100%;
   padding: 0px 11px 1px 15px;
   margin-top: 16px;
@@ -32,7 +32,7 @@ h1{
   box-sizing: border-box;
 }
 
-#check-id, #check-nickname{
+#check-nickname{
   position: absolute;
   box-sizing: border-box;
   top: 0;
