@@ -5,15 +5,15 @@
       'title'=>$mysqli->real_escape_string($_POST['title']),
       'content'=>$mysqli->real_escape_string($_POST['content'])
     );
-    if (isset($_POST['picture'])) {
+    if (isset($_POST['image'])) {
       $sql = "
       INSERT INTO topic
-        (category, title, description, picture,  id, created)
+        (category, title, description, image,  id, created)
         VALUES(
           '{$_POST['select']}',
           '{$filterd['title']}',
           '{$filterd['content']}',
-          '{$_POST['picture']}',
+          '{$_POST['image']}',
           'cuzzzu1318',
           NOW()
         )
