@@ -20,7 +20,7 @@
         'category' => htmlspecialchars($row['category']),
         'title' => htmlspecialchars($row['title']),
         'description' => htmlspecialchars($row['description']),
-        'picture' => htmlspecialchars($row['picture']),
+        'image' => htmlspecialchars($row['image']),
         'id' => htmlspecialchars($row['id']),
         'created' => htmlspecialchars($row['created'])
       );
