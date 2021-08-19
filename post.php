@@ -70,7 +70,8 @@
         <textarea name="content" class="bmr-text-light" id="content" cols="30" rows="10" disabled><?=$article['description']?></textarea>
       </div>
       <div>
-        <input type="image" src="이미지/지도.png" id="content" value="사진" disabled>
+        <?=Header(  "Content-type:  image/jpeg");
+        echo $article['picture'];?>
       </div>
       <div>
         <input type="button" onclick="location.href='list.php'"; id="go_list" class="bmr-btn"value="목록">
