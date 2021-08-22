@@ -1,19 +1,38 @@
 <?php
+function GetUniqFileName($FN, $PN)
+{
+  $FileExt = substr(strrchr($FN, "."), 1);
+  $FileName = substr($FN, 0, strlen($FN) - strlen($FileExt) - 1);
+  $FileCnt=0;
+  $ret = "$FileName.$FileExt";
+  while(file_exists($PN."/".$ret))
+  {
+    $FileCnt++;
+    $ret = $FileName."_".$FileCnt.".".$FileExt;
+  }
+
+  return($ret);
+}
+
+
   $mysqli = new mysqli("localhost", "root", "bo0apfkd", "boomerang");
   if (empty($_POST['title'])==false&&empty($_POST['content'])==false) {
     $filterd = array(
       'title'=>$mysqli->real_escape_string($_POST['title']),
       'content'=>$mysqli->real_escape_string($_POST['content'])
     );
-    if (isset($_POST['image'])) {
+    if (!empty($_FILES['image']['name'])) {
+      $dir = './image';
+      $name = GetUniqFileName($_FILES['image']['name'], $dir);
+      move_uploaded_file($_FILES['image']['tmp_name'], "$dir/$name");
       $sql = "
       INSERT INTO topic
-        (category, title, description, image,  id, created)
+        (category, title, description, image, id, created)
         VALUES(
           '{$_POST['select']}',
           '{$filterd['title']}',
           '{$filterd['content']}',
-          '{$_POST['image']}',
+          '{$name}',
           'cuzzzu1318',
           NOW()
         )
@@ -31,13 +50,11 @@
         )
       ";
     }
-
     $result = $mysqli->query($sql);
     if ($result == false) {
       echo $mysqli->error;
     }else{
-        $insert_id = $mysqli->insert_id;
-        echo("<script>location.replace('post.php?num=$insert_id');</script>");
+        echo("<script>location.replace('post.php?num=$mysqli->insert_id');</script>");
       }
   }else{
     echo '<script>alert("제목과 내용을 입력해 주세요!");</script>';
