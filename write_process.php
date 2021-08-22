@@ -13,9 +13,32 @@ function GetUniqFileName($FN, $PN)
 
   return($ret);
 }
+function getRealClientIp() {
+    $ipaddress = '';
+    if (getenv('HTTP_CLIENT_IP')) {
+        $ipaddress = getenv('HTTP_CLIENT_IP');
+    } else if(getenv('HTTP_X_FORWARDED_FOR')) {
+        $ipaddress = getenv('HTTP_X_FORWARDED_FOR');
+    } else if(getenv('HTTP_X_FORWARDED')) {
+        $ipaddress = getenv('HTTP_X_FORWARDED');
+    } else if(getenv('HTTP_FORWARDED_FOR')) {
+        $ipaddress = getenv('HTTP_FORWARDED_FOR');
+    } else if(getenv('HTTP_FORWARDED')) {
+        $ipaddress = getenv('HTTP_FORWARDED');
+    } else if(getenv('REMOTE_ADDR')) {
+        $ipaddress = getenv('REMOTE_ADDR');
+    } else {
+        $ipaddress = '알수없음';
+    }
+    return $ipaddress;
 
+}
 
   $mysqli = new mysqli("localhost", "root", "bo0apfkd", "boomerang");
+  $ip = getRealClientIp();
+  if ($ip = '127.0.0.1') {
+    $ip = "관리자";
+  }
   if (empty($_POST['title'])==false&&empty($_POST['content'])==false) {
     $filterd = array(
       'title'=>$mysqli->real_escape_string($_POST['title']),
@@ -33,7 +56,7 @@ function GetUniqFileName($FN, $PN)
           '{$filterd['title']}',
           '{$filterd['content']}',
           '{$name}',
-          'cuzzzu1318',
+          '{$ip}',
           NOW()
         )
       ";
@@ -45,7 +68,7 @@ function GetUniqFileName($FN, $PN)
           '{$_POST['select']}',
           '{$filterd['title']}',
           '{$filterd['content']}',
-          'cuzzzu1318',
+          '{$ip}',
           NOW()
         )
       ";
