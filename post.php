@@ -70,6 +70,13 @@
         <textarea name="content" class="bmr-text-light" id="content" cols="30" rows="10" disabled><?=$article['description']?></textarea>
       </div>
       <div>
+      <?php
+       if(!empty($article['image'])) {
+         echo <<<pic
+         <img src="image/{$article['image']}" id = "pic">
+         pic;
+       }
+      ?>
       </div>
       <div>
         <input type="button" onclick="location.href='list.php'"; id="go_list" class="bmr-btn"value="목록">

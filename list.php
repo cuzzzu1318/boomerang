@@ -56,7 +56,7 @@ maximum-scale=1.0, minimum-scale=1.0">
             'category' => htmlspecialchars($row['category']),
             'title' => htmlspecialchars($row['title']),
             'description' => htmlspecialchars($row['description']),
-            'picture' => htmlspecialchars($row['picture']),
+            'image' => htmlspecialchars($row['image']),
             'id' => htmlspecialchars($row['id']),
             'created' => htmlspecialchars($row['created'])
           );
@@ -64,9 +64,15 @@ maximum-scale=1.0, minimum-scale=1.0">
 
         <tbody>
          <tr style="height: 20px; cursor: pointer;" onclick="location.replace('post.php?num=<?=$row['num']?>');">
-           <td><?=$row['num']?></td>
-           <td><?=$row['title']?></td>
-           <td><?=$row['id']?></td>
+           <td><?=$article['num']?></td>
+           <td><?=$article['title']?>
+             <?php
+              if(!empty($article['image'])) {
+                echo "<img src=\"이미지/이미지 유.svg\">";
+              }
+             ?>
+           </td>
+           <td><?=$article['id']?></td>
          </tr>
         </tbody>
         <?php
