@@ -40,20 +40,33 @@
   background-color: white;
 }
 #writebtn{
+  margin-top: 16px;
   position: relative;
   width: 102px;
   height: 34px;
   float:right;
 }
+
 .div-table{
   position: relative;
   width: 90%;
   height: 348px;
   margin:0 auto;
 }
-.table{
+table{
+  margin-top: 16px;
   width: 100%;
-  text-align: center;
+  text-align: left;
   font-size: 15px;
   letter-spacing: -0.5px;
+  border-collapse: collapse;
+}
+th{
+  text-align: center;
+  border: 1px solid black;;
+  padding: 5px;
+}
+td{
+  border: 1px solid black;
+  padding: 5px;
 }
