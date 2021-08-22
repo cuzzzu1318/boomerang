@@ -33,7 +33,7 @@ maximum-scale=1.0, minimum-scale=1.0">
     </select>
   </div>
   <div class="div-table">
-  <table class="table">
+  <table>
     <thead>
       <tr>
         <th scope="col">번호</th>
@@ -68,7 +68,7 @@ maximum-scale=1.0, minimum-scale=1.0">
            <td><?=$article['title']?>
              <?php
               if(!empty($article['image'])) {
-                echo "<img src=\"이미지/이미지 유.svg\">";
+                echo "<img src=\"이미지/이미지 유.svg\" id = \"img_icon\">";
               }
              ?>
            </td>
