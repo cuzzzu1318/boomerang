@@ -64,7 +64,7 @@ maximum-scale=1.0, minimum-scale=1.0">
 
         <tbody>
          <tr style="height: 20px; cursor: pointer;" onclick="location.replace('post.php?num=<?=$row['num']?>');">
-           <td><?=$article['num']?></td>
+           <td style="text-align: center;"><?=$article['num']?></td>
            <td><?=$article['title']?>
              <?php
               if(!empty($article['image'])) {
