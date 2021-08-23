@@ -8,9 +8,9 @@
   </head>
   <body>
     <div>
-      <img src="이미지\뒤로가기.png" class="bmr-back" onclick="history.back()">
+      <img src="이미지\뒤로가기.svg" class="bmr-back" onclick="history.back()">
       <a href="main.html">
-        <img src="이미지\부메랑 로고.png" class="bmr-logo">
+        <img src="이미지\부메랑 로고.svg" class="bmr-logo">
       </a>
     </div>
     <div class="bmr-headline">
