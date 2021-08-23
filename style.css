@@ -13,7 +13,7 @@ body{
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 18px;
   padding: 0 10px;
   border-color: #CCCCCC;
@@ -29,7 +29,7 @@ body{
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 7.5px;
 }
 
@@ -37,7 +37,7 @@ body{
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 18px;
   padding: 0;
   border: 1px solid rgba(0, 0, 0, 0.6);
@@ -49,7 +49,7 @@ body{
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 18px;
   padding: 0;
   border: 1px solid #CCCCCC;
@@ -105,6 +105,6 @@ input::placeholder, textarea::placeholder{
 
 @media screen and (min-width: 768px) {
   .bmr-headline{
-    font-size: 16px;
+    font-size: 15px;
   }
 }

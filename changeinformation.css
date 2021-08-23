@@ -4,7 +4,7 @@ header{
 
 h1{
   display: block;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: bold;
 }
 
@@ -47,7 +47,7 @@ h1{
   display: block;
   padding: 10px;
   height: 49px;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
   color: #FEB3B3;
   line-height: 11.72px;
@@ -96,6 +96,6 @@ h1{
   height: 48px;
   background: #FEB3B3;
   color: #FFFFFF;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
 }

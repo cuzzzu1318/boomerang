@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>로그인</title>
-    <link rel="stylesheet" href="./login.css">
-    <link rel="stylesheet" href="./style.css">
-</head>
+<html lang="ko">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>부메랑-로그인</title>
+      <link rel="stylesheet" href="./login.css">
+      <link rel="stylesheet" href="./style.css">
+  </head>
 
-<body>
-  <header>
-    <div class="top">
-      <img class="bmr-back" src="이미지\뒤로가기.svg" alt="뒤로가기" onclick="history.back()">
-        <div class="div-logo">
-        <img src="이미지\부메랑 로고.svg" class="bmr-logo" onclick="location.href='main.html'">
+  <body>
+    <header>
+      <div class="top">
+        <img class="bmr-back" src="이미지\색 뒤로가기.svg" alt="뒤로가기" onclick="history.back()">
+        <h1>
+          <span>로그인</span>
+        </h1>
       </div>
-    </div>
-  </header>
+      <div class="bmr-headline"></div>
+    </header>
 
-  <div class="field">
+    <div class="field">
       <form action="" name="" method="post">
         <div class="field-login">
           <div class="field-id">
@@ -45,12 +46,20 @@
           }
       </script>
 
-      <div class="login_etc">
-          <a href="signup.html">회원가입</a>
-          <a href="findID.html">아이디 찾기</a>
-          <a href="pwfinder.html">비밀번호 찾기</a>
+
+      <div class="find">
+        <a href="findID.html">아이디 찾기</a>
+        <a href="pwfinder.html">비밀번호 찾기</a>
       </div>
-          <input type="button" class="kakao_login" value="카카오로 로그인" onclick="location.href='kakao.html'">
-</div>
-</body>
+      <div class="bottom">
+        <button type="button" class="kakao-loginbtn" onclick="location.href='kakao.html'">
+          <span class="inner">
+            <span class="kakao-img"></span>
+            <span class>카카오로 시작하기</span>
+          </span>
+        </button>
+        <input type="button" class="bmr-btn" id="signup" value="회원가입" onclick="location.href='signup.html'">
+      </div>
+    </div>
+  </body>
 </html>
