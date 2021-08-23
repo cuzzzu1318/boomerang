@@ -62,10 +62,10 @@ table{
 }
 th{
   text-align: center;
-  border: 1px solid black;;
+  border-bottom: 1px solid #CCC;
   padding: 5px;
 }
 td{
-  border: 1px solid black;
+  border-bottom: 1px solid #CCC;
   padding: 5px;
 }
