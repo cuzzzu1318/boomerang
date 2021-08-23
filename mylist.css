@@ -1,0 +1,64 @@
+header{
+  height: 50px;
+  background-color: #FEB3B3;
+}
+
+h1{
+  display: block;
+  font-size: 17px;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.wrap{
+  margin: 0 auto;
+  width: 90%;
+  max-width: 600px;
+  display: block;
+  box-sizing: border-box;
+  margin-top: 8px;
+}
+
+.div-sort{
+  margin-top: 8px;
+  position: relative;
+  width: 100%;
+  margin:0 auto;
+}
+
+#sort{
+  position: relative;
+  width: 80px;
+  height: 30px;
+  float:right;
+  margin-top: 20px;
+  margin-right: 8px;
+  border-radius: 4px;
+  font-size: 10px;
+  background-color: white;
+}
+
+.mylist{
+  position: relative;
+  width: 100%;
+  margin:0 auto;
+}
+
+table{
+  margin-top: 16px;
+  width: 100%;
+  font-size: 15px;
+  letter-spacing: -0.5px;
+  border-collapse: collapse;
+}
+th{
+  text-align: center;
+  border-bottom: 1px solid #CCC;
+  padding: 5px;
+}
+td{
+  text-align: center;
+  border-bottom: 1px solid #CCC;
+  padding: 5px;
+  font-size: 14px;
+}

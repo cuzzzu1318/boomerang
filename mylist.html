@@ -1,33 +1,52 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8"
-name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,
-maximum-scale=1.0, minimum-scale=1.0">
-<link rel="stylesheet" href="mylist.css">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <img src="이미지\부메랑 로고.svg" class="bmr-logo" onclick="location.href='main.html'">
-  <input type="image" class="bmr-back" src = "이미지\뒤로가기.svg">
-  <div class="bmr-headline">
-    내 게시글
-  </div>
-  <table>
-    <thead>
-      <tr>
-        <th>번호</th>
-        <th scope="col">제목</th>
-        <th scope="col">작성자</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-      <tr>
-        <td>1</td>
-        <td>잃어버림</td>
-        <td>안성민</td>
-      </tr>
-    </tbody>
-  </table>
-</body>
+  <head>
+  <meta charset="utf-8"
+  name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,
+  maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="mylist.css">
+  <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="top">
+        <img class="bmr-back" src="이미지\뒤로가기.svg" alt="뒤로가기" onclick="history.back()">
+        <h1>
+          <span>MY 게시글</span>
+        </h1>
+      </div>
+      <div class="bmr-headline"></div>
+    </header>
+
+    <div class="div-sort">
+      <select name="sort" class="bmr-slc" id="sort">
+        <option value="">카테고리</option>
+        <option value="찾았다">휴대폰</option>
+        <option value="찾는다">지갑</option>
+        <option value="찾는다">에어팟</option>
+      </select>
+    </div>
+
+    <div class="wrap">
+      <div class="mylist">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">번호</th>
+              <th scope="col">제목</th>
+              <th scope="col">작성자</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>지갑을 잃어버렸어요</td>
+              <td>안성민</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
 </html>
