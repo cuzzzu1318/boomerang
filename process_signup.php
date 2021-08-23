@@ -5,16 +5,18 @@ $filtered = array(
   'id'=>mysqli_real_escape_string($conn, $_POST['id']),
   'password'=>mysqli_real_escape_string($conn, $hashedPassword),
   'nickname'=>mysqli_real_escape_string($conn, $_POST['nickname']),
+  'tel'=>mysqli_real_escape_string($conn, $_POST['tel']),
   'area'=>mysqli_real_escape_string($conn, $_POST['area'])
 );
 
 
 $sql = "
-  INSERT INTO user_info (id, password, nickname, area)
+  INSERT INTO user_info (id, password, nickname, tel, area)
   VALUES (
     '{$filtered['id']}',
     '{$filtered['password']}',
     '{$filtered['nickname']}',
+    '{$filtered['tel']}',
     '{$filtered['area']}'
   )
 ";
