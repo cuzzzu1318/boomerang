@@ -1,12 +1,22 @@
+header{
+  height: 50px;
+}
+
+h1{
+  display: block;
+  font-size: 17px;
+  font-weight: bold;
+}
 
 .field{
   margin: 0 auto;
   width: 90%;
   max-width: 600px;
   display: block;
+  box-sizing: border-box;
 }
 
-.field-id,.field-pw{
+.field-id, .field-pw{
   position: relative;
   width: 100%;
   box-sizing: border-box;
@@ -23,7 +33,7 @@
 #id, #pw {
   width: 100%;
   padding: 0px 11px 1px 15px;
-  margin-top: 16px;
+  margin-top: 15px;
   display: block;
   height: 48px;
   box-sizing: border-box;
@@ -38,31 +48,121 @@
   display: block;
   padding: 10px;
   height: 112px;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
-  color: #EEB3B3;
+  background-color: #FEB3B3;
+  color: #FFFFFF;
   line-height: 11.72px;
 }
 
-.login_etc {
-  padding: 12px;
-  width: 90%;
-  max-width: 600px;
-  font-size: 12px;
-  display: flex;
-  justify-content: space-between;
-  margin:0 auto;
+.find{
+  overflow: hidden;
+  margin: 20px 0 0 0;
+  padding-top: 0;
+  border-top: 0;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
 }
 
-.kakao_login{
+.find a{
+  display: block;
+  float: left;
+  width: 50%;
+  font-size: 13px;
+  line-height: 20px;
+  color: #999;
+  text-align: right;
+  padding-right: 15px;
+  box-sizing: border-box;
+  border-right: 1px soid #999;
+}
+
+.find a:last-child{
+  box-sizing: border-box;
+  text-align: left;
+
+}
+
+.find a:before{
+  content: "";
+}
+
+.find a:last-child::before{
+  content: "|";
+  padding-right: 15px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.bottom{
   width: 100%;
-  max-width: 600px;
-  height: 50px;
-  border: 0px;
-  border-radius: 10px;
-  background: rgb(255, 238, 0);
-  font-size: 1.1em;
-  letter-spacing: 2px;
   margin-top: 20px;
+  box-sizing: border-box;
+}
+
+.kakao-loginbtn{
+  position: relative;
+  width: 100%;
+  height: 48px;
+  border-radius: 4px;
+  margin-top: 0px;
+  padding: 0 12px;
+  background: #fee500;
+  border: none;
   cursor: pointer;
+}
+
+.kakao-loginbtn::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  padding-left: 44px;
+  height: 48px;
+  border-right: 1px solid #eed200;
+}
+
+.inner{
+  display: flex;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: #000000;
+  font-size: 15px;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+.kakao-img{
+  position: absolute;
+  left: -4px;
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+  margin-left: 0;
+  background-image: url('이미지/카카오.svg');
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: contain;
+  background-position: 50%;
+  box-sizing: content-box;
+}
+
+#signup{
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 20px;
+  display: block;
+  height: 48px;
+  border: 1px solid #CCCCCC;
+  background: #FFFFFF;
+  color: #000000;
+  font-size: 15px;
+  font-weight: 400;
 }

@@ -4,14 +4,14 @@ header{
 
 h1{
   display: block;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: bold;
 }
 
 #write{
   text-align: center;
   border: none;
-  font-size: 16px;
+  font-size: 15px;
   color: #FEB3B3;
   font-weight: 600;
   padding: 10px 0;
@@ -72,7 +72,7 @@ div.upload{
   height: 48px;
   background: #FEB3B3;
   color: #FFFFFF;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   box-sizing: border-box;
 }
@@ -85,7 +85,7 @@ div.upload{
   height: 48px;
   background: #FEB3B3;
   color: #FFFFFF;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   box-sizing: border-box;
   display: flex;
