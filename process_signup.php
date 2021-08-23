@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect('localhost', 'root', 'wo5gh3gk', 'boomerang');
+$conn = mysqli_connect('localhost', 'root', 'bo0apfkd', 'boomerang');
 $hashedPassword = password_hash($_POST['password'], PASSWORD_DEFAULT);
 $filtered = array(
   'id'=>mysqli_real_escape_string($conn, $_POST['id']),

@@ -77,7 +77,7 @@ function getRealClientIp() {
     if ($result == false) {
       echo $mysqli->error;
     }else{
-        echo("<script>location.replace('post.php?num=$mysqli->insert_id');</script>");
+        header('Location: list.php');
       }
   }else{
     echo '<script>alert("제목과 내용을 입력해 주세요!");</script>';
