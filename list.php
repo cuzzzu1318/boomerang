@@ -7,6 +7,15 @@
     }
     $show = 10;
     $start = (($cur_page-1)*$show);
+
+    function getTitle($title){
+      if (mb_strlen($title, "UTF-8")>10) {
+        return mb_substr($title,0, 10, "UTF-8")."...";
+      }else{
+        return $title;
+      }
+
+    }
 ?>
 
 <!DOCTYPE html>
@@ -37,8 +46,9 @@ maximum-scale=1.0, minimum-scale=1.0">
     <thead>
       <tr>
         <th scope="col">번호</th>
+        <th scope="col">분류</th>
         <th scope="col">제목</th>
-        <th scope="col">작성자</th>
+        <th scope="col">시간</th>
       </tr>
     </thead>
     <?php
@@ -53,18 +63,31 @@ maximum-scale=1.0, minimum-scale=1.0">
         while ($row = $result->fetch_array()) {
           $article = array(
             'num' => $row['num'],
+            'found' => htmlspecialchars($row['found']),
             'category' => htmlspecialchars($row['category']),
-            'title' => htmlspecialchars($row['title']),
+            'title' => getTitle(htmlspecialchars($row['title'])),
             'description' => htmlspecialchars($row['description']),
             'image' => htmlspecialchars($row['image']),
             'id' => htmlspecialchars($row['id']),
-            'created' => htmlspecialchars($row['created'])
+            'created' =>($row['created'])
           );
+
         ?>
 
         <tbody>
          <tr style="height: 20px; cursor: pointer;" onclick="location.replace('post.php?num=<?=$row['num']?>');">
            <td style="text-align: center;"><?=$article['num']?></td>
+           <?php
+           if(($article['found'])=="찾았다") {
+             echo <<<found
+               <td id="found" style="text-align: center">{$article['found']}</td>
+             found;
+           }else {
+             echo <<<look
+               <td id="look" style="text-align: center">{$article['found']}</td>
+             look;
+           }
+          ?>
            <td><?=$article['title']?>
              <?php
               if(!empty($article['image'])) {
@@ -72,7 +95,7 @@ maximum-scale=1.0, minimum-scale=1.0">
               }
              ?>
            </td>
-           <td><?=$article['id']?></td>
+           <td style="font-size: 12px;"><?=substr($article['created'], 0, 10)?></td>
          </tr>
         </tbody>
         <?php

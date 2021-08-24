@@ -29,6 +29,15 @@ h1{
   box-sizing: border-box;
 }
 
+#found{
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  width: 100%;
+  height: 48px;
+  box-sizing: border-box;
+}
+
 #category{
   display: block;
   margin: 0 auto;

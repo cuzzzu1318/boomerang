@@ -17,6 +17,7 @@
       $row = $result->fetch_array(MYSQLI_BOTH);
       $article = array(
         'num' => $row['num'],
+        'found' => htmlspecialchars($row['found']),
         'category' => htmlspecialchars($row['category']),
         'title' => htmlspecialchars($row['title']),
         'description' => htmlspecialchars($row['description']),
@@ -62,7 +63,17 @@
 
     <div class="wrap">
       <div class="post">
-        <p id="title"><?=$article['title']?></p>
+          <?php
+          if(($article['found'])=="찾았다") {
+            echo <<<found
+              <p id="found">{$article['found']}</p>
+            found;
+          }else {
+            echo <<<look
+              <p id="look">{$article['found']}</p>
+            look;
+          }
+         ?>   <p id="title"><?=$article['title']?></p>
         <p id="category">카테고리 > <?=$article['category']?></p>
         <p id="local">위치 : 경상남도 창원시 의창구 창원대학로 20</p>
       </div>
