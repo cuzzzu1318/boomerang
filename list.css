@@ -66,6 +66,15 @@ th{
   padding: 5px;
 }
 td{
+  text-align: center;
   border-bottom: 1px solid #CCC;
   padding: 5px;
+}
+
+#found{
+  color: red;
+}
+
+#look{
+  color: blue;
 }

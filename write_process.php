@@ -50,8 +50,9 @@ function getRealClientIp() {
       move_uploaded_file($_FILES['image']['tmp_name'], "$dir/$name");
       $sql = "
       INSERT INTO topic
-        (category, title, description, image, id, created)
+        (found, category, title, description, image, id, created)
         VALUES(
+          '{$_POST['found']}',
           '{$_POST['select']}',
           '{$filterd['title']}',
           '{$filterd['content']}',
@@ -63,8 +64,9 @@ function getRealClientIp() {
     }else{
       $sql = "
       INSERT INTO topic
-        (category, title, description, id, created)
+        (found, category, title, description, id, created)
         VALUES(
+          '{$_POST['found']}',
           '{$_POST['select']}',
           '{$filterd['title']}',
           '{$filterd['content']}',
