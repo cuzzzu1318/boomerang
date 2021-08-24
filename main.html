@@ -3,6 +3,7 @@
   <head>
   <meta charset="utf-8"  name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,
   maximum-scale=1.0, minimum-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="style.css">
   </head>
@@ -23,19 +24,46 @@
         <a onclick="location.href='Map.html'" class="textmapbtn"style="cursor:pointer">
           지도에서 찾을래요!
         </a>
-        <div class="map">
-            <a class="moremapbtn"  href="https://map.kakao.com/?urlX=885530&urlY=489257&urlLevel=4&map_type=TYPE_MAP&map_hybrid=false">
-              <img src="이미지/지도 전체화면.svg">
-            </a>
-        </div>
+        <div class="map" id="kakao">
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	92f1eb1068764300ceb3f371fca80a65&libraries=clusterer"></script>
+        <script>
+          var mapContainer = document.getElementById('kakao'), // 지도를 표시할 div
+            mapOption = {
+            center: new kakao.maps.LatLng(35.24572314288633, 128.692912329970653), // 지도의 중심좌표
+            level: 12 // 지도의 확대 레벨
+          };
+          var map = new kakao.maps.Map(mapContainer, mapOption);
+
+          var clusterer = new kakao.maps.MarkerClusterer({
+            map: map,
+            averageCenter: true,
+            minLevel: 5
+          });
+          $.get("./test.json", function(data) {
+            var markers = $(data.positions).map(function(i, position) {
+              var marker = new kakao.maps.Marker({
+                position : new kakao.maps.LatLng(position.lat, position.lng)
+              });
+              kakao.maps.event.addListener(marker, 'click', function() {
+                location.href="Map.html"
+              });
+              return marker;
+            });
+            clusterer.addMarkers(markers);
+          });
+          kakao.maps.event.addListener(clusterer, 'clusterclick', function(cluster) {
+            var level = map.getLevel()-1;
+            map.setLevel(level, {anchor: cluster.getCenter()});
+          });
+        </script>
       </div>
-      <div id="list">
-        <a onclick="location.href='list.php'" class="textlistbtn"style="cursor:pointer">
-          게시판에서 찾을래요!
-        </a>
-        <img src="이미지/게시판.png" class="list">
-       <img src="이미지/더 보기.png" class="morelistbtn" onclick="location.href='list.php'" style="cursor:pointer">
-      </div>
+    </div>
+    <div id="list">
+      <a onclick="location.href='list.php'" class="textlistbtn"style="cursor:pointer">
+        게시판에서 찾을래요!
+      </a>
+      <img src="이미지/게시판.png" class="list">
+      <img src="이미지/더 보기.png" class="morelistbtn" onclick="location.href='list.php'" style="cursor:pointer">
     </div>
   </body>
 </html>
