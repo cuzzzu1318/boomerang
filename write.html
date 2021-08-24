@@ -47,8 +47,31 @@
       <input type="text" class="bmr-text-light" id="title" placeholder="제목을 입력해 주세요." name="title">
       <textarea name="content" class="bmr-text-light" id="textbox" cols="30" rows="10" placeholder="내용을 입력해 주세요."></textarea>
       <div class="upload">
-        <input type="button" class="bmr-btn"  id="uploadmap" value="위치 설정" name="location">
+        <!-- <input type="button" class="bmr-btn"  id="uploadmap" value="위치 설정" name="location"> -->
+        <div id="map" style="width:100%;height:350px;"></div>
       </div>
+      <p id="result"></p>
+
+      <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=92f1eb1068764300ceb3f371fca80a65"></script>
+      <script>
+      var mapContainer = document.getElementById('map'),
+      mapOption = {
+        center: new kakao.maps.LatLng(35.24572314288633, 128.692912329970653),
+        level: 6
+      };
+      var map = new kakao.maps.Map(mapContainer, mapOption);
+      var marker = new kakao.maps.Marker({
+        position: map.getCenter()
+      });
+      marker.setMap(map);
+      kakao.maps.event.addListener(map, 'click', function(mouseEvent) {
+        var latlng = mouseEvent.latLng;
+        marker.setPosition(latlng);
+        var message = '위도: ' + latlng.getLat() + ', 경도: ' + latlng.getLng();
+        var resultDiv = document.getElementById('result');
+        resultDiv.innerHTML = message;
+      });
+      </script>
       <div class="upload">
         <label for="uploadpicbtn" class="bmr-btn" id="uploadpic">사진 첨부</label>
         <input type="file" id="uploadpicbtn"

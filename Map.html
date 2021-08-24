@@ -1,66 +1,70 @@
 <!DOCTYPE html>
 <html lang="ko" dir="ltr">
-  <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" charset="utf-8">
-    <title>Map</title>
-    <link rel="stylesheet" href="Map.css">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <img class="bmr-back" src="이미지\뒤로가기.svg" alt="뒤로가기" onclick="history.back()">
-    <a href="main.html">
-      <div id="top" class="div-logo">
-        <img src="이미지\부메랑 로고.svg" class="bmr-logo" onclick="location.href='main.html'">
-      </div>
-    </a>
-    <div class="bmr-headline">
-      지도
+
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" charset="utf-8">
+  <title>Map</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="Map.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <img class="bmr-back" src="이미지\뒤로가기.svg" alt="뒤로가기" onclick="history.back()">
+  <a href="main.html">
+    <div id="top" class="div-logo">
+      <img src="이미지\부메랑 로고.svg" class="bmr-logo" onclick="location.href='main.html'">
     </div>
-    <div class="wrap">
-      <div class="search-div">
-        <form action="" accept-charset="utf-8" name="search-form" method="get">
-          <img src="이미지\돋보기.svg" class="glass-img" alt="돋보기">
-          <input type="text" id="search-input" class="bmr-text" placeholder="검색어를 입력하시오. " autocomplete="off">
-          <div class="search-history">
-        </form>
-      </div>
+  </a>
+  <div class="bmr-headline">
+    지도
+  </div>
+  <div class="wrap">
+    <div class="search-div">
+      <form action="" accept-charset="utf-8" name="search-form" method="get">
+        <img src="이미지\돋보기.svg" class="glass-img" alt="돋보기">
+        <input type="text" id="search-input" class="bmr-text" placeholder="검색어를 입력하시오. " autocomplete="off">
+        <div class="search-history">
+      </form>
     </div>
+  </div>
 
-    <div class="frame">
-      <div id="map" style="width:100%;height:400px;"></div>
-      <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	92f1eb1068764300ceb3f371fca80a65"></script>
-      <script>
-        var mapContainer = document.getElementById('map'),
-            mapOption = {
-                center: new kakao.maps.LatLng(35.24572314288633, 128.692912329970653),
-                level: 3
-            };
-        var map = new kakao.maps.Map(mapContainer, mapOption); //지도 생성
-        var markers =[]; //마커 배열
+  <div class="frame">
+    <div class="map" id="kakao" style="width:100%;height:400px;"></div>
+  </div>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	92f1eb1068764300ceb3f371fca80a65&libraries=clusterer"></script>
+  <script>
+    var mapContainer = document.getElementById('kakao'), // 지도를 표시할 div
+      mapOption = {
+        center: new kakao.maps.LatLng(35.24572314288633, 128.692912329970653), // 지도의 중심좌표
+        level: 12 // 지도의 확대 레벨
+      };
+    var map = new kakao.maps.Map(mapContainer, mapOption);
 
-        function addMarker(position) {
-          var marker = new kakao.maps.Marker({
-            position: position,
-            clickable: true
-          });
-          marker.setMap(map);
-          markers.push(marker);
-          kakao.maps.event.addListener(marker, 'click', function() {
-            location.href = "post.html"
-          });
-        }
-        addMarker(new kakao.maps.LatLng(35.24572314288633, 128.692912329970653));
-        addMarker(new kakao.maps.LatLng(35.243061906471866, 128.69181340063875));
-        addMarker(new kakao.maps.LatLng(35.246482861084736, 128.69078590272377));
+    var clusterer = new kakao.maps.MarkerClusterer({
+      map: map,
+      averageCenter: true,
+      minLevel: 5
+    });
+    $.get("./test.json", function(data) {
+      var markers = $(data.positions).map(function(i, position) {
+        var marker = new kakao.maps.Marker({
+          position: new kakao.maps.LatLng(position.lat, position.lng)
+        });
+        kakao.maps.event.addListener(marker, 'click', function() {
+          location.href = "Map.html"
+        });
+        return marker;
+      });
+      clusterer.addMarkers(markers);
+    });
+    kakao.maps.event.addListener(clusterer, 'clusterclick', function(cluster) {
+      var level = map.getLevel() - 1;
+      map.setLevel(level, {
+        anchor: cluster.getCenter()
+      });
+    });
+  </script>
+</body>
 
-        marker.setMap(map); //마커 표시
-        function setMarkers(map) {
-          for (var i = 0; i < markers.length; i++) {
-            markers[i].setMap(map);
-          }
-        }
-
-      </script>
-    </div>
-  </body>
 </html>
