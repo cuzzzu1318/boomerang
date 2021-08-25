@@ -106,33 +106,51 @@ maximum-scale=1.0, minimum-scale=1.0">
   </table>
   </div>
   <div id="page">
-    <?php
-    $sql = "
-      SELECT num FROM topic ORDER BY num DESC;
-    ";
-    $result = $mysqli->query($sql);
-    if ($result == false) {
-    echo $mysqli->error;
-    }else{
-      $num = 1;
-      $page = 1;
-      echo "
-      <a href=\"list.php?cur_page=$page\">$page</a>
+    <div id="prev">
+      <?php
+      if ($cur_page>1) {
+        $prev_page = $cur_page-1;
+        echo "
+        <a href=\"list.php?cur_page=$prev_page\">이전</a>
+        ";
+      }
+      ?>
+    </div>
+    <div id="pages">
+      <?php
+      $sql = "
+        SELECT COUNT(*) FROM topic;
       ";
-      if ($result->num_rows > 0) {
-        while ($row = $result->fetch_array()) {
-          $num++;
-          if ($num%10==1) {
-            $page++;
+      $result = $mysqli->query($sql);
+      $row = $result->fetch_array();
+      $page = 1;
+      for ($count=0; $count < $row[0]; $count++) {
+        if ($count%10==1) {
+          if ($cur_page==$page) {
+            echo "
+            <a style=\"width: 15px; height: 10px;border: 1px solid #CCC;\" href=\"list.php?cur_page=$page\">$page</a>
+            ";
+          }
+          else {
             echo "
             <a href=\"list.php?cur_page=$page\">$page</a>
             ";
           }
-
+          $page++;
         }
       }
-    }
-     ?>
+      ?>
+    </div>
+    <div id="next">
+      <?php
+      if ($cur_page<$page-1) {
+        $next_page = $cur_page+1;
+        echo "
+        <a href=\"list.php?cur_page=$next_page\">다음</a>
+        ";
+      }
+       ?>
+    </div>
   </div>
   <div class="div-writebtn">
     <input type="button" class="bmr-btn" id="writebtn"   value="글쓰기" onclick="location.href='write.html'" style="cursor:pointer ">
