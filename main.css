@@ -22,82 +22,70 @@ header{
   width: 90%;
   max-width: 600px;
   display: block;
+  padding-bottom: 60px;
   box-sizing: border-box;
 }
 
-.menubtn{
-position: absolute;
-width: 38px;
-height: 38px;
-left: 28px;
-top: 32px;
-}
-.loginbtn{
-position: absolute;
-width: 38px;
-height: 38px;
-right: 28px;
-top: 32px;
-}
 #map,#list{
-position: relative;
-width: 100%;
-height: auto;
-margin: auto;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: auto;
 }
-.textmapbtn,.textlistbtn{
-position: relative;
-height: 18px;
-margin-bottom: 17px;
-margin-top: 20px;
-font-size: 18px;
-line-height: 18px;
 
-display: flex;
-letter-spacing: -2px;
+.textmapbtn,.textlistbtn{
+  position: relative;
+  height: 18px;
+  margin-bottom: 17px;
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 18px;
+
+  display: flex;
+  letter-spacing: -2px;
 }
+
 .map{
   position: relative;
   height:200px;
+  background-image: url('https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMDEyMDFfMTY4%2FMDAxNjA2NzkzMjMxOTAx.IwCnCZnludpCGqKS1oaR1FWLMbwhleuIVR_Vg3IBci0g.Y09LouToCTDGoFUnOZNvhs6PsFBgmhckZXCNHEB9hP8g.PNG.sshh3160%2Fimage.png&type=sc960_832');
+  background-position: center;
+  background-repeat: repeat;
 }
+
 .moremapbtn{
   position:relative;
   float:right;
   margin-right:5px;
   margin-top:5px;
 }
-.list{
 
-}
-.morelistbtn{
-
-}
 @media (min-width: 768px) {
-.textmapbtn,.textlistbtn{
-  font-size: 26px;
-}
-#map{
-position: relative;
-float:left;
-width: 50%;
-height:auto;
-}
-#list{
+  .textmapbtn,.textlistbtn{
+    font-size: 26px;
+  }
+  #map{
   position: relative;
+  float:left;
   width: 50%;
-  height: auto;
-  margin: auto;
-  display: inline-block;
-}
-.textmapbtn,.textlistbtn{
-  width: 81%;
-  margin: auto;
-  margin-bottom: 17px;
-  margin-top: 20px;
-}
-.map{
-  width: 81%;
-  height: 500px;
-  margin: auto;
-}
+  height:auto;
+  }
+  #list{
+    position: relative;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    display: inline-block;
+  }
+  .textmapbtn,.textlistbtn{
+    width: 81%;
+    margin: auto;
+    margin-bottom: 17px;
+    margin-top: 20px;
+  }
+  .map{
+    width: 81%;
+    height: 500px;
+    margin: auto;
+  }
 }
