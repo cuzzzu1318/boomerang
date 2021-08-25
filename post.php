@@ -73,12 +73,13 @@
               <p id="look">{$article['found']}</p>
             look;
           }
-         ?>   <p id="title"><?=$article['title']?></p>
-        <p id="category">카테고리 > <?=$article['category']?></p>
-        <p id="local">위치 : 경상남도 창원시 의창구 창원대학로 20</p>
+         ?>
+         <p id="category">카테고리 > <?=$article['category']?></p>
+          <p id="title"><?=$article['title']?></p>
+        <p id="local">작성 시간: <?=$article['created']?></p>
       </div>
-      <div>
-        <textarea name="content" class="bmr-text-light" id="content" cols="30" rows="10" disabled><?=$article['description']?></textarea>
+      <div id="content" style="border: 1px solid black; min-height: 200px;">
+        <font size = "1">위치: 창원대학교</font> <br> <?=$article['description']?>
       </div>
       <div>
       <?php
