@@ -48,6 +48,7 @@
 }
 
 .div-table{
+  height: 360px;
   position: relative;
   width: 90%;
   margin:0 auto;
@@ -77,6 +78,12 @@ td{
 
 #look{
   color: blue;
+}
+
+#page{
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
 }
 
 @media (max-width: 360px){

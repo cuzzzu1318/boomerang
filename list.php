@@ -105,6 +105,35 @@ maximum-scale=1.0, minimum-scale=1.0">
      ?>
   </table>
   </div>
+  <div id="page">
+    <?php
+    $sql = "
+      SELECT num FROM topic ORDER BY num DESC;
+    ";
+    $result = $mysqli->query($sql);
+    if ($result == false) {
+    echo $mysqli->error;
+    }else{
+      $num = 1;
+      $page = 1;
+      echo "
+      <a href=\"list.php?cur_page=$page\">$page</a>
+      ";
+      if ($result->num_rows > 0) {
+        while ($row = $result->fetch_array()) {
+          $num++;
+          if ($num%10==1) {
+            $page++;
+            echo "
+            <a href=\"list.php?cur_page=$page\">$page</a>
+            ";
+          }
+
+        }
+      }
+    }
+     ?>
+  </div>
   <div class="div-writebtn">
     <input type="button" class="bmr-btn" id="writebtn"   value="글쓰기" onclick="location.href='write.html'" style="cursor:pointer ">
   </div>
