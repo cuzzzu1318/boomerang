@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <meta charset="utf-8"
-  name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,
-  maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="mylist.css">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8"
+    name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,
+    maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="mylist.css">
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
@@ -16,19 +16,12 @@
           <span>MY 게시글</span>
         </h1>
       </div>
-      <div class="bmr-headline"></div>
     </header>
 
-    <div class="div-sort">
-      <select name="sort" class="bmr-slc" id="sort">
-        <option value="">카테고리</option>
-        <option value="찾았다">휴대폰</option>
-        <option value="찾는다">지갑</option>
-        <option value="찾는다">에어팟</option>
-      </select>
-    </div>
-
     <div class="wrap">
+      <!-- <span class="count">
+        총 10개의 게시글이 있습니다.
+      </span> -->
       <div class="mylist">
         <table>
           <thead>
@@ -48,5 +41,30 @@
         </table>
       </div>
     </div>
+
+    <footer>
+      <div class="bottom-bar">
+        <button type="button" class="bar" onclick="location.href='main.html'">
+          <span class="bar-inner">
+            <img src="이미지/홈.svg" class="ico">
+          </span>
+        </button>
+        <button type="button" class="bar" onclick="location.href='Map.html'">
+          <span class="bar-inner">
+            <img src="이미지/지도 아이콘.svg" class="ico">
+          </span>
+        </button>
+        <button type="button" class="bar" onclick="location.href='list.php'">
+          <span class="bar-inner">
+            <img src="이미지/게시판아이콘.svg" class="ico">
+          </span>
+        </button>
+        <button type="button" class="bar" onclick="location.href='mypage.html'">
+          <span class="bar-inner">
+            <img src="이미지/마이페이지.svg" class="ico">
+          </span>
+        </button>
+      </div>
+    </footer>
   </body>
 </html>
