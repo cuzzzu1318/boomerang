@@ -78,3 +78,9 @@ td{
 #look{
   color: blue;
 }
+
+@media (max-width: 360px){
+  table{
+    font-size: 12px;
+  }
+}
