@@ -22,23 +22,28 @@
 
     <div class="field">
       <form action="index.php" accept-charset="utf-8" name="user-info" method="get">
+
         <div class="field-id">
           <input type="text" class="bmr-text-light" id="id" name="id" placeholder="아이디를 입력해주세요.">
         </div>
+
         <div class="field-tel">
-          <input type="text" class="bmr-text-light" id="tel" name="tel" placeholder="'-'없이 번호를 입력해주세요.">
-          <input type="button" class="bmr-btn" id="check-tel" value="인증번호">
+          <input type="text" class="bmr-text-light" id="tel" name="tel" placeholder="'-'없이 번호를 입력해주세요." >
+          <input type="button" class="bmr-btn" id="check-tel" value="인증번호" disabled="" onclick="div_block();start_timer();">
         </div>
-        <div class="field-num">
-          <input type="text" class="bmr-text-light" id="num" name="num" placeholder="인증번호를 입력해주세요.">
-          <input type="button" class="bmr-btn" id="check-num" value="확인">
-          <span id="timer">3:30</span>
+
+        <div class="field-num" id="div-num">
+          <input type="text" class="bmr-text-light" id="num" value="" name="num" placeholder="인증번호를 입력해주세요.">
+          <input type="button" class="bmr-btn" id="check-num" disabled="" value="확인">
+          <span id="timer">3:00</span>
         </div>
+
         <div class="btn-next">
           <a href="pwreset.html" style="text-decoration: none;">
             <input type="submit" class="bmr-btn" id="next" value="다음">
           </a>
         </div>
+
       </form>
     </div>
 
@@ -66,5 +71,66 @@
         </button>
       </div>
     </footer>
+
+    <script>
+      document.getElementById("tel").addEventListener('click', function(){
+        var field = document.getElementById("tel").value;
+        var btn = document.getElementById("check-tel");
+        if(field.length == 11){
+          btn.disabled = false;
+          btn.style.color = "#FEB3B3";
+        }
+      });
+
+      document.getElementById("num").addEventListener('click', function(){
+        var field = document.getElementById("num").value;
+        var btn = document.getElementById("check-num");
+        if(field.length == 6){
+          btn.disabled = false;
+          btn.style.color = "#FEB3B3";
+        }
+      });
+
+      function div_block(){
+        document.getElementById("div-num").style.display = "block";
+      }
+
+      function start_timer() {
+        var time = 179;
+        var min;
+        var sec;
+        var tel = document.getElementById("tel");
+        var num = document.getElementById("num");
+
+        var check_num = document.getElementById("check-num");
+        var check_tel = document.getElementById("check-tel");
+        check_tel.disabled = true
+        check_tel.style.color = "#CCCCCC";
+
+        var x = setInterval(function(){
+          min = parseInt(time / 60);
+          sec = time % 60;
+
+          if(sec < 10){
+            document.getElementById("timer").innerHTML = min + ":0" + sec;
+          }
+          else{
+            document.getElementById("timer").innerHTML = min + ":" + sec;
+          }
+
+          time--;
+
+          if(time < 0){
+            clearInterval(x);
+            alert("인증시간이 초과하였습니다. 다시 인증해주시기 바랍니다.");
+            tel.value = null;
+            num.value = null;
+            check_num.disabled = true;
+            check_num.style.color = "#CCCCCC";
+            document.getElementById("timer").innerHTML = "3:00";
+          }
+        }, 1000);
+      }
+    </script>
   </body>
 </html>

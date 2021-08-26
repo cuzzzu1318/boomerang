@@ -28,7 +28,6 @@ body{
   padding: 0;
   font-family: Roboto;
   font-style: normal;
-  font-weight: normal;
   font-size: 15px;
   line-height: 7.5px;
 }
@@ -36,7 +35,6 @@ body{
 .bmr-text-dark{
   font-family: Roboto;
   font-style: normal;
-  font-weight: normal;
   font-size: 15px;
   line-height: 18px;
   padding: 0;
@@ -48,7 +46,6 @@ body{
 .bmr-text-light{
   font-family: Roboto;
   font-style: normal;
-  font-weight: normal;
   font-size: 15px;
   line-height: 18px;
   padding: 0;
