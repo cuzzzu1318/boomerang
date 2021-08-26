@@ -16,7 +16,15 @@ h1{
   box-sizing: border-box;
 }
 
-.field-num, .field-tel{
+.field-tel{
+  position: relative;
+  width: 100%;
+  padding-right: 93px;
+  box-sizing: border-box;
+}
+
+.field-num{
+  display: none;
   position: relative;
   width: 100%;
   padding-right: 93px;
@@ -49,8 +57,13 @@ h1{
   height: 49px;
   font-size: 14px;
   font-weight: 600;
-  color: #FEB3B3;
+  color: #CCCCCC;
   line-height: 11.72px;
+}
+
+input:disabled{
+
+  border: 1px solid #CCCCCC;
 }
 
 #timer{
