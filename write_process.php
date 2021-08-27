@@ -34,7 +34,7 @@ function getRealClientIp() {
 
 }
 
-  $mysqli = new mysqli("localhost", "root", "bo0apfkd", "boomerang");
+  $mysqli = new mysqli("localhost", "boomerang", "bo0apfkd!", "boomerang");
   $ip = getRealClientIp();
   if ($ip == '127.0.0.1') {
     $ip = "관리자";

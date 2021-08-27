@@ -1,5 +1,5 @@
 <?php
-  $mysqli = new mysqli("localhost", "root", "bo0apfkd", "boomerang");
+  $mysqli = new mysqli("localhost", "boomerang", "bo0apfkd!", "boomerang");
   if (isset($_GET['num'])) {
     $post_no = $_GET['num'];
   }else{
