@@ -29,12 +29,12 @@ maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
   <div id="top" class="div-logo">
-    <img src="이미지\부메랑 로고.svg" class="bmr-logo" onclick="location.href='main.html'">
-    <input type="image" class="bmr-back" src = "이미지\뒤로가기.svg" img onclick="history.back()">
+    <img src="image\logo.svg" class="bmr-logo" onclick="location.href='main.html'">
+    <input type="image" class="bmr-back" src = "image\go_back.svg" img onclick="history.back()">
   </div>
   <div class="div-search">
     <input type="text" class="search" placeholder="검색">
-    <img src="이미지\돋보기.svg" class="searchimg" alt="검색">
+    <img src="image\lens.svg" class="searchimg" alt="검색">
     <select name="sort" class="bmr-slc" id="sort">
       <option value="">정렬</option>
       <option value="찾았다">찾았다</option>
@@ -91,7 +91,7 @@ maximum-scale=1.0, minimum-scale=1.0">
            <td><?=$article['title']?>
              <?php
               if(!empty($article['image'])) {
-                echo "<img src=\"이미지/이미지 유.svg\" id = \"img_icon\">";
+                echo "<img src=\"image/have_image.svg\" id = \"img_icon\">";
               }
              ?>
            </td>

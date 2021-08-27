@@ -48,7 +48,7 @@
   <body>
     <header>
       <div class="top">
-        <img class="bmr-back" src="이미지\색 뒤로가기.svg" alt="뒤로가기" onclick="history.back()">
+        <img class="bmr-back" src="image\go_back_color.svg" alt="뒤로가기" onclick="history.back()">
         <h1>
           <span>게시 글</span>
         </h1>
