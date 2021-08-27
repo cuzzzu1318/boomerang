@@ -21,7 +21,7 @@
     </header>
 
     <div class="field">
-      <form action="index.php" accept-charset="utf-8" name="user-info" method="get">
+      <form action="process_findID.php" accept-charset="utf-8" name="user-info" method="post">
         <div class="field-tel">
           <input type="text" class="bmr-text-light" id="tel" name="tel" placeholder="'-'없이 번호를 입력해주세요.">
           <input type="button" class="bmr-btn" id="check-tel" value="인증번호">
