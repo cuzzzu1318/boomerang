@@ -90,8 +90,26 @@
         display: none;
         position: absolute;">
         <input type="submit" id="writebtn" style="
-        display: none;"></button>
+        display: none;" disabled></button>
       </div>
     </form>
+    <script>
+      function able(){
+        var sub_btn = document.getElementById('writebtn');
+        var sub_lab = document.getElementById('write');
+        var title = document.getElementById('title');
+        var content = document.getElementById('textbox');
+        if (title.value.length>0&&content.value.length>0) {
+          sub_btn.disabled = false;
+          sub_lab.style.color = "#FEB3B3";
+          sub_lab.style.cursor = "pointer";
+        }else {
+          sub_btn.disabled = true;
+          sub_lab.style.color = "#CCCCCC";
+          sub_lab.style.cursor = "default";
+        }
+      }
+      document.getElementById('contents').addEventListener("keyup",able);
+    </script>
   </div>
 </body>

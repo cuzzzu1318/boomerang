@@ -79,11 +79,8 @@ function getRealClientIp() {
     if ($result == false) {
       echo $mysqli->error;
     }else{
-        header('Location: list.php');
+        header('Location: list.php?cur_page=1');
       }
-  }else{
-    echo '<script>alert("제목과 내용을 입력해 주세요!");</script>';
-    echo("<script>location.replace('write.html');</script>");
   }
 
 

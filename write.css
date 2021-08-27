@@ -12,11 +12,11 @@ h1{
   text-align: center;
   border: none;
   font-size: 15px;
-  color: #FEB3B3;
+  color: #CCCCCC;
   font-weight: 600;
   padding: 10px 0;
   height: 28px;
-  cursor: pointer;
+  cursor: default;
   position: absolute;
   right: 18px;
 }
