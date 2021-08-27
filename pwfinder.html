@@ -73,21 +73,31 @@
     </footer>
 
     <script>
-      document.getElementById("tel").addEventListener('click', function(){
-        var field = document.getElementById("tel").value;
-        var btn = document.getElementById("check-tel");
-        if(field.length == 11){
-          btn.disabled = false;
-          btn.style.color = "#FEB3B3";
+      let tel = document.getElementById("tel");
+      let num = document.getElementById("num");
+      let check_tel = document.getElementById("check-tel");
+      let check_num = document.getElementById("check-num");
+      let timer = document.getElementById("timer");
+
+      tel.addEventListener("keyup", function(){
+        if(tel.value.length == 11){
+          check_tel.disabled = false;
+          check_tel.style.color = "#FEB3B3";
+        }
+        else{
+          check_tel.disabled = true;
+          check_tel.style.color = "#CCCCCC";
         }
       });
 
-      document.getElementById("num").addEventListener('click', function(){
-        var field = document.getElementById("num").value;
-        var btn = document.getElementById("check-num");
-        if(field.length == 6){
-          btn.disabled = false;
-          btn.style.color = "#FEB3B3";
+      num.addEventListener('keyup', function(){
+        if(num.value.length == 6){
+          check_num.disabled = false;
+          check_num.style.color = "#FEB3B3";
+        }
+        else{
+          check_num.disabled = true;
+          check_num.style.color = "#CCCCCC";
         }
       });
 
@@ -96,14 +106,9 @@
       }
 
       function start_timer() {
-        var time = 179;
+        var time = 9;
         var min;
         var sec;
-        var tel = document.getElementById("tel");
-        var num = document.getElementById("num");
-
-        var check_num = document.getElementById("check-num");
-        var check_tel = document.getElementById("check-tel");
         check_tel.disabled = true
         check_tel.style.color = "#CCCCCC";
 
@@ -112,10 +117,10 @@
           sec = time % 60;
 
           if(sec < 10){
-            document.getElementById("timer").innerHTML = min + ":0" + sec;
+            timer.innerHTML = min + ":0" + sec;
           }
           else{
-            document.getElementById("timer").innerHTML = min + ":" + sec;
+            timer.innerHTML = min + ":" + sec;
           }
 
           time--;
@@ -127,7 +132,7 @@
             num.value = null;
             check_num.disabled = true;
             check_num.style.color = "#CCCCCC";
-            document.getElementById("timer").innerHTML = "3:00";
+            timer.innerHTML = "3:00";
           }
         }, 1000);
       }
