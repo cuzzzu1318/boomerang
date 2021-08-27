@@ -33,8 +33,16 @@ h1{
   margin-top: 16px;
 }
 
+.div-table{
+  height: 360px;
+  position: relative;
+  width: 90%;
+  margin:0 auto;
+}
 table{
+  margin-top: 16px;
   width: 100%;
+  text-align: left;
   font-size: 15px;
   letter-spacing: -0.5px;
   border-collapse: collapse;
@@ -48,9 +56,15 @@ td{
   text-align: center;
   border-bottom: 1px solid #CCC;
   padding: 5px;
-  font-size: 14px;
 }
 
+#found{
+  color: red;
+}
+
+#look{
+  color: blue;
+}
 
 #page{
   width: 90%;

@@ -16,6 +16,11 @@
       }
 
     }
+    $sql = "
+      SELECT COUNT(*) FROM topic;
+    ";
+    $result = $mysqli->query($sql);
+    $row = $result->fetch_array();
 ?>
 <!DOCTYPE html>
 <html>
@@ -38,10 +43,9 @@
     </header>
 
     <div class="wrap">
-      <!-- <span class="count">
-        총 10개의 게시글이 있습니다.
-      </span> -->
-      <div class="mylist">
+      <span class="count">
+        총 <?=$row[0]?>개의 게시글이 있습니다.
+      </span>
         <div class="div-table">
         <table>
           <thead>
@@ -112,7 +116,7 @@
           if ($cur_page>1) {
             $prev_page = $cur_page-1;
             echo "
-            <a href=\"list.php?cur_page=$prev_page\">이전</a>
+            <a href=\"mylist.php?cur_page=$prev_page\">이전</a>
             ";
           }
           ?>
@@ -134,7 +138,7 @@
               }
               else {
                 echo "
-                <a href=\"list.php?cur_page=$page\">$page</a>
+                <a href=\"mylist.php?cur_page=$page\">$page</a>
                 ";
               }
               $page++;
@@ -147,13 +151,12 @@
           if ($cur_page<$page-1) {
             $next_page = $cur_page+1;
             echo "
-            <a href=\"list.php?cur_page=$next_page\">다음</a>
+            <a href=\"mylist.php?cur_page=$next_page\">다음</a>
             ";
           }
            ?>
         </div>
       </div>
-    </div>
 
     <footer>
       <div class="bottom-bar">
