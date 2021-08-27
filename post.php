@@ -1,5 +1,5 @@
 <?php
-  $mysqli = new mysqli("localhost", "root", "bo0apfkd", "boomerang");
+  $mysqli = new mysqli("localhost", "boomerang", "bo0apfkd!", "boomerang");
   if (isset($_GET['num'])) {
     $post_no = $_GET['num'];
   }else{
@@ -85,7 +85,7 @@
       <?php
        if(!empty($article['image'])) {
          echo <<<pic
-         <img src="image/{$article['image']}" id = "pic">
+         <img src="upload/{$article['image']}" id = "pic">
          pic;
        }
       ?>

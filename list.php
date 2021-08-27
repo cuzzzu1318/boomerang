@@ -1,5 +1,5 @@
 <?php
-    $mysqli = new mysqli("localhost", "root", "bo0apfkd", "boomerang");
+    $mysqli = new mysqli("localhost", "boomerang", "bo0apfkd!", "boomerang");
     if (isset($_GET['cur_page'])) {
       $cur_page = $_GET['cur_page'];
     }else {
