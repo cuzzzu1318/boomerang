@@ -35,7 +35,7 @@
   <body>
     <header>
       <div class="top">
-        <img class="bmr-back" src="이미지\뒤로가기.svg" alt="뒤로가기" onclick="history.back()">
+        <img class="bmr-back" src="image\go_back.svg" alt="뒤로가기" onclick="history.back()">
         <h1>
           <span>MY 게시글</span>
         </h1>
@@ -96,7 +96,7 @@
                  <td><?=$article['title']?>
                    <?php
                     if(!empty($article['image'])) {
-                      echo "<img src=\"이미지/이미지 유.svg\" id = \"img_icon\">";
+                      echo "<img src=\"image/have_image.svg\" id = \"img_icon\">";
                     }
                    ?>
                  </td>
@@ -158,29 +158,29 @@
         </div>
       </div>
 
-    <footer>
-      <div class="bottom-bar">
-        <button type="button" class="bar" onclick="location.href='main.html'">
-          <span class="bar-inner">
-            <img src="이미지/홈.svg" class="ico">
-          </span>
-        </button>
-        <button type="button" class="bar" onclick="location.href='Map.html'">
-          <span class="bar-inner">
-            <img src="이미지/지도 아이콘.svg" class="ico">
-          </span>
-        </button>
-        <button type="button" class="bar" onclick="location.href='list.php'">
-          <span class="bar-inner">
-            <img src="이미지/게시판아이콘.svg" class="ico">
-          </span>
-        </button>
-        <button type="button" class="bar" onclick="location.href='mypage.html'">
-          <span class="bar-inner">
-            <img src="이미지/마이페이지.svg" class="ico">
-          </span>
-        </button>
-      </div>
-    </footer>
+      <footer>
+        <div class="bottom-bar">
+          <button type="button" class="bar" onclick="location.href='main.html'">
+            <span class="bar-inner">
+              <img src="image/ico_home.svg" class="ico">
+            </span>
+          </button>
+          <button type="button" class="bar" onclick="location.href='Map.html'">
+            <span class="bar-inner">
+              <img src="image/ico_map.svg" class="ico">
+            </span>
+          </button>
+          <button type="button" class="bar" onclick="location.href='list.php'">
+            <span class="bar-inner">
+              <img src="image/ico_list.svg" class="ico">
+            </span>
+          </button>
+          <button type="button" class="bar" onclick="location.href='mypage.html'">
+            <span class="bar-inner">
+              <img src="image/ico_mypage.svg" class="ico">
+            </span>
+          </button>
+        </div>
+      </footer>
   </body>
 </html>
