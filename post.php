@@ -85,7 +85,7 @@
       <?php
        if(!empty($article['image'])) {
          echo <<<pic
-         <img src="image/{$article['image']}" id = "pic">
+         <img src="upload/{$article['image']}" id = "pic">
          pic;
        }
       ?>
