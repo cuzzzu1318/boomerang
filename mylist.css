@@ -50,3 +50,32 @@ td{
   padding: 5px;
   font-size: 14px;
 }
+
+
+#page{
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  align-items: center;
+}
+
+a{
+  text-decoration : none;
+  color: blue;
+}
+
+#prev, #pages, #next{
+  display:inline-block;
+  box-sizing: border-box;
+}
+
+
+#pages{
+  margin: 0 auto;
+}
+
+@media (max-width: 360px){
+  table{
+    font-size: 12px;
+  }
+}
