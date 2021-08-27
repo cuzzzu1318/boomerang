@@ -1,35 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>부메랑</title>
-    <link rel="stylesheet" href="./login.css">
-    <link rel="stylesheet" href="./style.css">
-    <style>
-        img {display: block; margin: 0px auto;}
-    </style>
-</head>
-<body>
-  <img class="bmr-back" src="이미지\뒤로가기.svg" alt="뒤로가기" onclick="history.back()">
-  <a href="main.html">
-    <div id="top" class="div-logo">
-      <img src="이미지\부메랑 로고.svg" class="bmr-logo" onclick="location.href='main.html'">
-    </div>
-  </a>
-  <div class="bmr-headline">
-    로그인
-  </div>
-  <div class="wrap">
-      <form class="login" action="process_login.php" method="post">
-          <div class="input">
-              <input type="email" class="bmr-text" name="id" id="id" placeholder="아이디를 입력하세요">
-              <input type="password" class="bmr-text" name="password" id="pw" placeholder="비밀번호를 입력하세요">
+<html lang="ko">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>부메랑-로그인</title>
+      <link rel="stylesheet" href="./login.css">
+      <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="top">
+        <img class="bmr-back" src="이미지\색 뒤로가기.svg" alt="뒤로가기" onclick="history.back()">
+        <h1>
+          <span>로그인</span>
+        </h1>
+      </div>
+      <div class="bmr-headline"></div>
+    </header>
+
+    <div class="field">
+      <form action="login_process.php" method="post">
+        <div class="field-login">
+          <div class="field-id">
+              <input type="id" class="bmr-text-light" name="id" id="id" placeholder="아이디">
           </div>
-          <label class="submit">
-            <input type="submit" class="bmr-btn" id="submit" value="로그인">
-          </label>
+          <div class="field-pw">
+              <input type="password" class="bmr-text-light" name="password" id="pw" placeholder="비밀번호">
+          </div>
+          <input type="submit" class="bmr-btn" id="submit" value="로그인">
+        </div>
       </form>
+
+
       <!--<script>
           document.getElementById('submit').onclick = function() {
             var ID = document.getElementById('id').value;
@@ -42,20 +45,46 @@
             }
           }
       </script>-->
-      <div class="login_etc">
-          <div class="sign_up">
-              <a href="signup.php">회원가입</a>
-          </div>
-          <div class="forgot_id">
-              <a href="findID.html">아이디 찾기</a>
-          </div>
-          <div class="forgot_pw">
-              <a href="pwfinder.html">비밀번호 찾기</a>
-          </div>
+
+
+      <div class="find">
+        <a href="findID.html">아이디 찾기</a>
+        <a href="pwfinder.html">비밀번호 찾기</a>
       </div>
-      <div class="kakao_login">
-          <input type="button" value="카카오로 로그인">
+      <div class="bottom">
+        <button type="button" class="kakao-loginbtn" onclick="location.href='kakao.html'">
+          <span class="inner">
+            <span class="kakao-img"></span>
+            <span>카카오로 시작하기</span>
+          </span>
+        </button>
+        <input type="button" class="bmr-btn" id="signup" value="회원가입" onclick="location.href='signup.php'">
       </div>
-  </div>
-</body>
+    </div>
+
+    <footer>
+      <div class="bottom-bar">
+        <button type="button" class="bar" onclick="location.href='main.html'">
+          <span class="bar-inner">
+            <img src="이미지/홈.svg" class="ico">
+          </span>
+        </button>
+        <button type="button" class="bar" onclick="location.href='Map.html'">
+          <span class="bar-inner">
+            <img src="이미지/지도 아이콘.svg" class="ico">
+          </span>
+        </button>
+        <button type="button" class="bar" onclick="location.href='list.php'">
+          <span class="bar-inner">
+            <img src="이미지/게시판아이콘.svg" class="ico">
+          </span>
+        </button>
+        <button type="button" class="bar" onclick="location.href='mypage.html'">
+          <span class="bar-inner">
+            <img src="이미지/마이페이지.svg" class="ico">
+          </span>
+        </button>
+      </div>
+    </footer>
+  </body>
 </html>
