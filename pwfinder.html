@@ -29,7 +29,7 @@
 
         <div class="field-tel">
           <input type="text" class="bmr-text-light" id="tel" name="tel" placeholder="'-'없이 번호를 입력해주세요." >
-          <input type="button" class="bmr-btn" id="check-tel" value="인증번호" disabled="" onclick="div_block();start_timer();">
+          <input type="button" class="bmr-btn" id="check-tel" value="인증번호" disabled="">
         </div>
 
         <div class="field-num" id="div-num">
@@ -78,6 +78,7 @@
       let check_tel = document.getElementById("check-tel");
       let check_num = document.getElementById("check-num");
       let timer = document.getElementById("timer");
+      let div_num = document.getElementById("div-num");
 
       tel.addEventListener("keyup", function(){
         if(tel.value.length == 11){
@@ -101,12 +102,12 @@
         }
       });
 
-      function div_block(){
-        document.getElementById("div-num").style.display = "block";
-      }
+      check_tel.addEventListener("click",function(){
+        div_num.style.display = "block";
+      });
 
-      function start_timer() {
-        var time = 9;
+      check_tel.addEventListener("click",function(){
+        var time = 179;
         var min;
         var sec;
         check_tel.disabled = true
@@ -135,7 +136,7 @@
             timer.innerHTML = "3:00";
           }
         }, 1000);
-      }
+      });
     </script>
   </body>
 </html>

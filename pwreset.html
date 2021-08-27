@@ -18,16 +18,27 @@
       </div>
       <div class="bmr-headline"></div>
     </header>
+
       <div class="field">
-        <div class="field-pw">
-          <input type="password" class="bmr-text-light" id="new-pw" placeholder="새 비밀번호를 입력해 주세요">
+
+        <div class="field-pw" id="field-pw">
+          <input type="password" class="bmr-text-light" id="new-pw" name="re_password" placeholder="새 비밀번호를 입력해주세요.">
+
+          <div class="info" id="pw-info">
+            <span class=pw-info>영문/숫자를 조합하여 8자 이상 입력</span>
+          </div>
+
+          <input type="password" class="bmr-text-light" id="new-pw-check" name="re_password" placeholder="새 비밀번호 확인">
+
+          <div class="match" id="pw-match">
+            <span class=pw-match>비밀번호가 일치합니다.</span>
+          </div>
+
+          <div class="match" id="pw-unmatch">
+            <span class=pw-unmatch>비밀번호가 일치하지 않습니다.</span>
+          </div>
         </div>
-        <div class="field-pw">
-          <input type="password" class="bmr-text-light" id="new-pw" placeholder="새 비밀번호 확인">
-        </div>
-        <div>
-          <p id="match">비밀번호가 일치합니다.</p>
-        </div>
+
         <div>
           <input type="button" class="bmr-btn" id="store" value="설정하기">
         </div>
@@ -58,5 +69,35 @@
         </button>
       </div>
     </footer>
+
+    <script>
+      let field_pw = document.getElementById("field-pw");
+      let new_pw = document.getElementById("new-pw");
+      let pw_info = document.getElementById("pw-info");
+      let new_pw_check = document.getElementById("new-pw-check");
+      let pw_match = document.getElementById("pw-match");
+      let pw_unmatch = document.getElementById("pw-unmatch");
+
+      new_pw.addEventListener("click",function(){
+        pw_info.style.display = "block";
+      });
+
+      new_pw_check.addEventListener("click",function(){
+        pw_unmatch.style.display = "block";
+      });
+
+      field_pw.addEventListener("keyup",function(){
+        if (new_pw_check.value.length > 0) {
+          if(new_pw.value == new_pw_check.value){
+              pw_match.style.display = "block";
+              pw_unmatch.style.display = "none";
+            }
+            else{
+              pw_match.style.display = "none";
+              pw_unmatch.style.display = "block";
+            }
+          }
+        });
+    </script>
   </body>
 </html>

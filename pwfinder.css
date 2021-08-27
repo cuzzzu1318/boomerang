@@ -63,6 +63,7 @@ h1{
 
 input:disabled{
   border: 1px solid #CCCCCC;
+  cursor: default;
 }
 
 #timer{
